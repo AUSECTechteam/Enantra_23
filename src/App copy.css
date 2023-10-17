@@ -1,0 +1,246 @@
+/* Actual body doesnt have a horizontal scroll*/
+
+/* WebKit-based browsers (e.g., Chrome, Safari) */
+/* Customize the track */
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #000000;
+}
+
+/* Customize the thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background-color: #333; /* Color of the thumb */
+  border-radius: 6px; /* Round the corners of the thumb */
+}
+
+/* Customize the track when the scrollbar is hovered */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Hover color */
+}
+
+
+body
+{
+  overflow-x: hidden; 
+}
+
+/*div container*/
+.body
+{
+  font-family: Arial, sans-serif;
+  height: 100vh;
+}
+/*Menu bar*/
+.navbar {
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  overflow: hidden;
+  z-index: 50;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  
+}
+
+.navbar a {
+  float: left;
+  font-size: 2.5vh;
+  color: rgb(202, 202, 202);
+  text-align: center;
+  padding: 1px 16px;
+  text-decoration: none;
+  
+}
+
+.navbar a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.logo {
+  height: 7vh;  
+  
+}
+
+/*  Enantra */
+.overlay-text{
+  position: absolute;
+  top: 53vh;
+  left: 17vh;
+  z-index: 20;
+  color: white;
+  width: 100vh;
+}
+
+.overlay-text p {
+font-size: 2vh;
+}
+
+.container {
+
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  background-color: #ff0000;
+  
+  margin: 0px;
+  padding: 0%;
+  }    
+
+
+.icn_size
+{
+  height:4vh;
+  width: auto;
+}
+
+.hello{
+  position: absolute;
+  top: 64vh;
+  left: 17vh;
+  z-index: 20;  
+
+}
+
+
+
+.glow-button {
+
+background-color: #24ad9b;
+color: #ffffff;
+
+border: none;
+width:23vh;
+height: 5vh;;
+cursor: pointer;
+border-radius: 2px;
+box-shadow: 0 0 20px #24ad9b, 0 0 30px #24ad9b, 0 0 40px #24ad9b;
+margin-right: 20px;
+padding: 5px;
+font-size: 3vh;
+
+}
+
+.glow-button:hover {
+  background-color: #03ffdd;
+  color: #ffffff;
+  box-shadow: 0 0 35px hsl(172, 100%, 50%), 0 0 65px hsl(172, 100%, 50%)
+
+}
+.glow-button2 {
+
+background-color: #e08722;
+color: #ffffff;
+box-shadow: 0 0 20px #e08722, 0 0 30px #e08722, 0 0 40px #e08722;
+border: none;
+width:22vh;
+height: 5vh;;
+cursor: pointer;
+border-radius: 2px;
+margin-right: 20px;
+padding: 5px;
+font-size: 3vh;
+
+}
+
+.glow-button2:hover {
+
+  background-color: #ff8800;
+  color: #ffffff;
+  box-shadow: 0 0 30px #ff8800, 0 0 40px #ff8800, 0 0 65px #ff8800;
+  
+}
+.volume_button{
+  cursor: pointer;
+  background-color: #ffffff08;
+  position: absolute;
+  border-radius: 5vh;
+  height: 6vh;
+  width: 6vh;
+  z-index: 20;
+  right: 5vw;
+  top:62vh;
+  border: #ffffff;
+  border-color: aliceblue;
+  border-style: double;
+}
+
+.volume_button:hover{
+  background-color: #ffffff5b;
+}
+.volume{
+  
+  width: 90%;
+  height: auto;
+}
+
+.space{
+margin-top: 15px;
+}
+
+.space2{
+margin-bottom: 10px;
+}
+
+.imgg{
+  height: auto;
+  width:80vh;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  left:-1.5vh;
+  top:30vh;
+  z-index: 20;
+}
+
+.glow-button img{
+margin-right: 4px;
+float:left;
+}
+
+.glow-button2 img{
+margin-right: 4px;
+float:left;
+}
+
+.Investiture1
+{
+  z-index: 10;
+  position: relative;
+  width: 100vw;
+  border: none;
+  margin: 0px;
+  padding: 0%;
+}
+
+
+
+.button-text
+{
+  position: relative;
+  top: -10px;
+}
+
+/*The info regarding the events*/
+.trans-slideshow {
+
+  position: absolute;
+  bottom:0px;
+  width: 100vw;
+  height: 30vw;
+  overflow: hidden;
+  z-index: 15;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+  
+
+}
+
+.button_text
+{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding-left: 1vh;
+}
