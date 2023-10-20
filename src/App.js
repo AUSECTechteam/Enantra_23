@@ -35,6 +35,8 @@ function App() {
   return (
     
     <div>
+
+      {/* If the body is in Landscape Mode */}
       <div className="body">
         {/* Menu or Navigation Bar */}
         <div className="navbar" onMouseEnter={toggleVideo}>
@@ -129,9 +131,10 @@ function App() {
         <div class="popup-content">
           <h2>Please Rotate Your Device</h2>
           <p>This website is best viewed in landscape mode.</p>
-          <img src="rotate.png" class="rt"/>
+          <img src="https://drive.google.com/uc?export=view&id=1dEGrS0f6deNBwcgkiBqSWqFZSV-sO9jC" class="rt"/>
         </div>
       </div>
+
     </div>
       
   );
