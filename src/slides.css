@@ -1,13 +1,13 @@
 /*//the size of the page and color when we hover..*/
 .Events-box {
 
-    position: relative;
+    position: absolute;
     width: 100vw;
-    height: 1000vh;
+    height: 300vh;
     overflow: hidden;
     z-index: 15;
     background-color: rgb(0, 0, 0);
-  
+
   }   
   
   .Event_Category

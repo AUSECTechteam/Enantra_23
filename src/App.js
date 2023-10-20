@@ -116,17 +116,13 @@ function App() {
 
         {/* Gradient to blend in the video */}
         <div className="trans-slideshow"></div>
-
+        
+        {/* Container to display Events */}
+        <div className="Events-box" onMouseEnter={toggleVideoPlaying} onMouseLeave={toggleVideoPlaying} >
+        </div>
+      </div>
 
       
-      </div>
-
-      {/* Gradient to blend in the video */}
-
-      {/* Container to display Events */}
-      <div className="Events-box" onMouseEnter={toggleVideoPlaying} onMouseLeave={toggleVideoPlaying} >
-        
-      </div>
         
     </div>
   );
