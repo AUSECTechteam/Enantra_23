@@ -24,6 +24,7 @@ function App() {
   // Function to mute and unmute the video
   const toggleMute = () => {
     setIsVideoMuted(!isVideoMuted);
+    setIsVideoPlaying(isVideoPlaying);
   };
 
   // Function to play the video once the mouse moves

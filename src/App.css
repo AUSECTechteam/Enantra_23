@@ -168,8 +168,8 @@ font-size: 3vh;
   background-color: #ffffff08;
   position: absolute;
   border-radius: 5vh;
-  height: 6vh;
-  width: 6vh;
+  height: 7vh;
+  width: 7vh;
   z-index: 20;
   right: 5vw;
   top:68vh;
@@ -183,7 +183,7 @@ font-size: 3vh;
 }
 .volume{
   
-  width: 90%;
+  width: 65%;
   height: auto;
 }
 
