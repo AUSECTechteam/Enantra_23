@@ -49,24 +49,24 @@ function App() {
         </a>
         
         <a href="#about-us" className="space">
-          About Us
+          Contact Us
         </a>
       </div>
 
       {/*  Promo Video Container */}
       <div className="container">
          
-         {/*  Investiture Promotional Video */}
+        {/*  Investiture Promotional Video */}
         <video className="Investiture1" preload="auto" muted={isVideoMuted}  autoPlay={isVideoPlaying} loop >
           <source
             src="https://drive.google.com/uc?export=download&id=1gEvm_Zkf1VukB3kB1WPRvQQN4-mZynR-"
             type="video/mp4"
           />
         </video>
-
+        
         {/*  Enantra Logo */}
         <img id="overlay-image" className="imgg" src="https://drive.google.com/uc?export=view&id=1AvmcdE3ltY3LTX449WJVqhUzt_-G0uK3"/>
-        
+
         {/*  Enantra Gist */}
         <div className="overlay-text">
           <p>Enantra is an AU courant entrepreneurship event aimed at envisioning<br/>
@@ -74,7 +74,6 @@ function App() {
           of corporate play.
           </p>
         </div>
-        <br/>
 
         {/*  Instagram and AUSEC official page links */}
         <div className="hello">
@@ -82,7 +81,7 @@ function App() {
             <button className="glow-button" type="button" value="insta" >
               <div className="button_text">
                 <img className="icn_size sizing"  src="https://drive.google.com/uc?export=view&id=1z-QVBlmroXCFrleAeEby-RVadcL79W7M"/>
-                Instagram
+                <span class="content">Instagram</span>
                 </div>
             </button> 
           </a>
@@ -96,45 +95,39 @@ function App() {
           </a>
         </div> 
 
-        {/*  Unmute button */}
-        
-          <button className="volume_button" id="unmute-button" onClick={toggleMute} >
-            <img 
-            className={`icn_size volume ${isVideoMuted ? 'muted' : ''}`} 
-            id="speaker-icon"  
-            src={!isVideoMuted ? 'https://drive.google.com/uc?export=view&id=1tGY1TLhfWO2rCReC1b9o8cFSTFnLRusc' : 'https://drive.google.com/uc?export=view&id=18s8rMz84keNue9BYu2pyln2l6HqdPpca'}
-            />
-          </button>
-        
-      
-        
+        {/*Unmute button*/} 
+        <button className="volume_button" id="unmute-button" onClick={toggleMute} >
+          <img 
+          className={`img_icn volume ${isVideoMuted ? 'muted' : ''}`} 
+          id="speaker-icon"  
+          src={!isVideoMuted ? 'https://drive.google.com/uc?export=view&id=1tGY1TLhfWO2rCReC1b9o8cFSTFnLRusc' : 'https://drive.google.com/uc?export=view&id=18s8rMz84keNue9BYu2pyln2l6HqdPpca'}
+          />
+        </button>
+
+        {/*Events box*/}
+        <div class="Events_container">
+          <p className='event-text'>Mega Events</p>
+          <MegaEvents/><br/>
+          <p className='event-text'>Mini Events</p>
+          <MiniEvents/><br/>
+          <p className='event-text'>Workshops</p>
+          <WorkShops/>
+        </div>
 
         {/* Gradient to blend in the video */}
         <div className="trans-slideshow"></div>
+
+
       
       </div>
 
-      
+      {/* Gradient to blend in the video */}
 
       {/* Container to display Events */}
       <div className="Events-box" onMouseEnter={toggleVideoPlaying} onMouseLeave={toggleVideoPlaying} >
-        <p className='event-text'>MEGA EVENTS</p>
-        <MegaEvents/><br/>
-        <p className='event-text'>MINI EVENTS</p>
-        <MiniEvents/><br/>
-        <p className='event-text'>WORKSHOPS</p>
-        <WorkShops/>
+        
       </div>
-
-      
-         
-      <div className="Event_Category" >
-        <div className="Event_category_tittle"></div>
-        <div className="Carousel_Placer">
-          
-        </div>
-      </div>
-
+        
     </div>
   );
 }

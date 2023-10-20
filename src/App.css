@@ -107,87 +107,62 @@ body
   left: 17vh;
   z-index: 20;
   color: white;
-  width: 100vh;
+  width: 100vw;
 }
 
 .overlay-text p {
-font-size: 2vh;
+font-size: 3vh;
 }
 
 .container {
 
   position: relative;
-  display: inline-block;
-  width: 100%;
-  background-color: #ff0000;
-  
-  margin: 0px;
-  padding: 0%;
-  }    
+  width: 100vw;
+  height: auto;
+  padding: 0;
+}    
 
+.Events_container
+{
+  position: absolute;
+  top: 78vh;
+  left: 5vh;
+  z-index: 20;
+}
 
 .icn_size
 {
-  height:4vh;
+  height:3vh;
   width: auto;
+  margin-right: 3vh;
 }
 
 .hello{
   position: absolute;
-  top: 64vh;
+  top: 68vh;
   left: 17vh;
   z-index: 20;  
-
 }
 
 
 
-.glow-button {
 
-background-color: #24ad9b;
-color: #ffffff;
 
-border: none;
-width:23vh;
-height: 5vh;;
-cursor: pointer;
-border-radius: 2px;
-box-shadow: 0 0 20px #24ad9b, 0 0 30px #24ad9b, 0 0 40px #24ad9b;
-margin-right: 20px;
-padding: 5px;
-font-size: 3vh;
 
-}
 
-.glow-button:hover {
-  background-color: #03ffdd;
-  color: #ffffff;
-  box-shadow: 0 0 35px hsl(172, 100%, 50%), 0 0 65px hsl(172, 100%, 50%)
 
-}
-.glow-button2 {
 
-background-color: #e08722;
-color: #ffffff;
-box-shadow: 0 0 20px #e08722, 0 0 30px #e08722, 0 0 40px #e08722;
-border: none;
-width:22vh;
-height: 5vh;;
-cursor: pointer;
-border-radius: 2px;
-margin-right: 20px;
-padding: 5px;
-font-size: 3vh;
 
-}
-
-.glow-button2:hover {
-
-  background-color: #ff8800;
-  color: #ffffff;
-  box-shadow: 0 0 30px #ff8800, 0 0 40px #ff8800, 0 0 65px #ff8800;
+.img_icn
+{
+  position: absolute;
+  padding: .75vh;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
   
 }
+
 .volume_button{
   cursor: pointer;
   background-color: #ffffff08;
@@ -197,7 +172,7 @@ font-size: 3vh;
   width: 6vh;
   z-index: 20;
   right: 5vw;
-  top:62vh;
+  top:68vh;
   border: #ffffff;
   border-color: aliceblue;
   border-style: double;
@@ -233,32 +208,39 @@ margin-bottom: 10px;
 
 .glow-button {
 
+  position: relative;
   background-color: #ffffff;
   color: #000000;
-  
   border: none;
   width:23vh;
-  height: 5vh;;
+  height: 7vh;
   cursor: pointer;
   border-radius: 4px;
   margin-right: 20px;
-  padding: 5px;
+  padding: .5vh;
   font-size: 2.5vh;
   font-weight: 700;
-  
-  }
+  align-items: center;
+  justify-content: center;
+}
   
   .glow-button:hover {
     background-color: #ffffff9e;
     
   }
+
+  .glow-button2:hover {
+
+    background-color: #191919cf;
+  }
   .glow-button2 {
-  
-  background-color: #252525bb;
+
+  position: relative;
+  background-color: #2525258d;
   color: #ffffff;
   border: none;
   width:22vh;
-  height: 5vh;;
+  height: 8vh;;
   cursor: pointer;
   border-radius: 3px;
   margin-right: 20px;
@@ -270,28 +252,36 @@ margin-bottom: 10px;
 {
   z-index: 10;
   position: relative;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
   width: 100vw;
   border: none;
-  margin: 0px;
-  padding: 0%;
+  
 }
 
 
-
-.button-text
+.button_text
 {
-  position: relative;
-  top: -10px;
+  vertical-align: middle;
+  position: absolute; 
+  top:50%;
+  bottom: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  height: 50%;
+  
 }
 
 /*The info regarding the events*/
 .trans-slideshow {
 
   position: absolute;
-  bottom:0px;
+  bottom:0;
   width: 100vw;
-  height: 30vw;
-  overflow: hidden;
+  height: 50vw;
+  
   z-index: 15;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
   
@@ -300,7 +290,7 @@ margin-bottom: 10px;
 
 .button_text
 {
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);

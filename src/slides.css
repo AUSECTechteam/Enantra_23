@@ -2,7 +2,6 @@
 .Events-box {
 
     position: relative;
-    top: -21px;
     width: 100vw;
     height: 1000vh;
     overflow: hidden;
@@ -183,7 +182,9 @@
 .event-text {
   font-size: 7vh;
   padding-left: 2%;
-  font-weight: 550;
+  font-weight: 600;
+  padding-top: 0%;
+  margin-bottom: 0;
 }
 
 .Events-box {
@@ -314,7 +315,7 @@ body {
 
 .slider-button-mega {
   border: none;
-  background-color: grey;
+  background-color: rgba(20, 20, 20, 0.895);
   z-index: 10;
   margin: var(--img-gap) 0;
   width: var(--handle-size-mega);
@@ -326,11 +327,20 @@ body {
   color: white;
 }
 
+.left-handle:hover
+{
+  background-color: rgba(0, 0, 0, 0.589);
+}
+
 .left-handle {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
 
+.right-handle:hover
+{
+  background-color: rgba(74, 74, 74, 0.589);
+}
 .right-handle {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;

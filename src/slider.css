@@ -39,7 +39,7 @@ body {
 
 .slider-button {
     border: none;
-    background-color: grey;
+    background-color: rgba(20, 20, 20, 0.895);
     z-index: 10;
     margin: 0;
     width: var(--handle-size);
