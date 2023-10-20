@@ -297,3 +297,17 @@ margin-bottom: 10px;
   transform: translate(-50%, -50%);
   padding-left: 1vh;
 }
+
+
+@media (orientation: portrait) {
+  .body
+  {
+    display: none;
+  }
+
+  .message_to_invert_screen
+  {
+    display:block;
+  
+  }
+}
