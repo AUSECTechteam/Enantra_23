@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import MegaEvents from './components/MegaEvents';
 import MiniEvents from './components/MiniEvents';
 import WorkShops from './components/Workshops';
@@ -7,9 +7,11 @@ import './slides.css';
 
 function App() {
 
+
   const [isVideoMuted, setIsVideoMuted] = useState(true); // Primary mute button
   const [isVideoPlaying, setIsVideoPlaying] = useState(true); // To play the video on mouse movements
   const [isSlideVideoMuted, setIsSlideVideoMuted] = useState(true); // To play the slide video on mouse movements
+  const [navbarClass, setNavbarClass] = useState('navbar'); // Navbar
 
   // Function to pause the video while scrolling through the events
   const toggleSlideMute = () => {
@@ -32,6 +34,32 @@ function App() {
     setIsVideoPlaying(true);
   };
 
+  useEffect(() => {
+    function handleScroll() {
+      const windowHeight = window.innerHeight;
+      const scrollPosition = window.scrollY;
+      const scrollPercentage = (scrollPosition / (document.body.scrollHeight - windowHeight)) * 100;
+      
+
+
+      if (scrollPercentage >= 50) {
+        // Call your function when scrolled 50% of the screen
+        handleScroll50Percent();
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  function handleScroll50Percent() {
+    console.log("Scrolled 50% of the screen");
+    setNavbarClass('navbar navbar_colour');
+  }
+  
   return (
     
     <div>
@@ -39,7 +67,7 @@ function App() {
       {/* If the body is in Landscape Mode */}
       <div className="body">
         {/* Menu or Navigation Bar */}
-        <div className="navbar" onMouseEnter={toggleVideo}>
+        <div className={`navbar ${navbarClass}`} onMouseEnter={toggleVideo}>
           <a href="">
             <img
               className="logo"
@@ -85,7 +113,7 @@ function App() {
                 <div className="button_text">
                   <img className="icn_size sizing"  src="https://drive.google.com/uc?export=view&id=1z-QVBlmroXCFrleAeEby-RVadcL79W7M"/>
                   <span class="content">Instagram</span>
-                  </div>
+                </div>
               </button> 
             </a>
             <a href="https://auced.com/ausec/" target="_blank">
