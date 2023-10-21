@@ -199,7 +199,7 @@
 }
 
 :root {
-  --handle-size-mini: 3rem;
+  --handle-size-mini: 4rem;
   --img-gap: 1rem;  /* Change this to adjust carousel picture size */
   --items-per-screen-mini: 3;
   --slider-index: 0;
@@ -234,8 +234,12 @@ body {
 }
 
 .slider-button-mini {
+  opacity: 100%;
   border: none;
-  background-color: grey;
+  border-radius: 3.5px;
+  color: white;
+  background-color: rgb(50, 50, 50);
+  text-shadow: 0px 0px 8.5px white;
   z-index: 10;
   margin: var(--img-gap) 0;
   width: var(--handle-size-mini);
@@ -244,17 +248,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
 }
 
-.left-handle {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.right-handle {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+.slider-button-mini:hover{
+  background-color: rgb(35, 35, 35);
 }
 
 .handle {
@@ -279,7 +276,7 @@ body {
 /* MEGAEVENTS SLIDER CSS */
 
 :root {
-  --handle-size-mega: 3rem;
+  --handle-size-mega: 4rem;
   --img-gap: 1rem;  /* Change this to adjust carousel picture size */
   --items-per-screen-mega: 2;
   --slider-index: 0;
@@ -314,8 +311,12 @@ body {
 }
 
 .slider-button-mega {
+  opacity: 100%;
   border: none;
-  background-color: rgba(20, 20, 20, 0.895);
+  border-radius: 3.5px;
+  color: white;
+  background-color: rgb(50, 50, 50);
+  text-shadow: 0px 0px 8.5px white;
   z-index: 10;
   margin: var(--img-gap) 0;
   width: var(--handle-size-mega);
@@ -324,26 +325,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
 }
 
-.left-handle:hover
+.slider-button-mega:hover
 {
-  background-color: rgba(0, 0, 0, 0.589);
-}
-
-.left-handle {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.right-handle:hover
-{
-  background-color: rgba(74, 74, 74, 0.589);
-}
-.right-handle {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+  background-color: rgb(35, 35, 35);
 }
 
 .handle {
@@ -372,7 +358,7 @@ body {
 }
 
 :root {
-  --handle-size-work: 3rem;
+  --handle-size-work: 4rem;
   --img-gap: 1rem;  /* Change this to adjust carousel picture size */
   --items-per-screen-work: 3;
   --slider-index: 0;
@@ -389,7 +375,6 @@ body {
   justify-content: center;
   overflow: hidden;
   max-width: 99%;
-  /* margin-top: 5vh; */
 }
 
 .slider-work {   
@@ -407,8 +392,12 @@ body {
 }
 
 .slider-button-work {
+  opacity: 100%;
   border: none;
-  background-color: grey;
+  border-radius: 3.5px;
+  color: white;
+  background-color: rgb(50, 50, 50);
+  text-shadow: 0px 0px 8.5px white;
   z-index: 10;
   margin: var(--img-gap) 0;
   width: var(--handle-size-work);
@@ -417,17 +406,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
 }
 
-.left-handle {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.right-handle {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+.slider-button-work:hover{
+  background-color: rgb(35, 35, 35);
 }
 
 .handle {

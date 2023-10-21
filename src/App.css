@@ -279,7 +279,6 @@ margin-bottom: 10px;
 }
 
 .popup {
-  /*display: flex;*/
   align-items: center;
   justify-content: center;
   position: fixed;
@@ -290,10 +289,12 @@ margin-bottom: 10px;
   background: rgba(0, 0, 0, 0.7);
   z-index: 1;
   display: none;
+  /* color: black; */
+  background-color: black;
 }
 
 .popup-content {
-  background: #fff;
+  /* background: #fff; */
   padding: 20px;
   text-align: center;
   border-radius: 5px;
@@ -304,6 +305,7 @@ margin-bottom: 10px;
   width: 10%;
   height: 10%;
   position: relative;
+  color: black;
   animation: rotate-icon 5s linear infinite;
 }
 
