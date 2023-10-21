@@ -56,7 +56,7 @@ function App() {
   }, []);
 
   function handleScroll50Percent() {
-    console.log("Scrolled 50% of the screen");
+    //console.log("Scrolled 50% of the screen");
     setNavbarClass('navbar navbar_colour');
   }
   
