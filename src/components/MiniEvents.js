@@ -27,8 +27,8 @@ class MiniEvents extends Component {
     
       getMaxSlides() {
         const w = window.innerWidth;
-        if (w <= 500) this.setState({ maxSlides: 5 });
-        else if (w <= 1000) this.setState({ maxSlides: 2 });
+        if (w <= 500) this.setState({ maxSlides: 1 });
+        else if (w <= 1000) this.setState({ maxSlides: 1 });
         else this.setState({ maxSlides: 1 });
       }
     
@@ -75,12 +75,12 @@ class MiniEvents extends Component {
                     <div className="text">&#8249;</div>
                 </button>
                 <div ref={this.sliderRef} className="slider-mini">
-                    <img id="mini-1" onClick={this.handleImageClick} src="https://via.placeholder.com/210/FFCCCB?text=A"/>
-                    <img id="mini-2" onClick={this.handleImageClick} src="https://via.placeholder.com/220/FFCCCB?text=B"/>
-                    <img id="mini-3" onClick={this.handleImageClick} src="https://via.placeholder.com/230/FFCCCB?text=C"/>
-                    <img id="mini-4" onClick={this.handleImageClick} src="https://via.placeholder.com/240/FFCCCB?text=D"/>
-                    <img id="mini-5" onClick={this.handleImageClick} src="https://via.placeholder.com/250/FFCCCB?text=E"/>
-                    <img id="mini-6" onClick={this.handleImageClick} src="https://via.placeholder.com/260/FFCCCB?text=F"/>
+                    <img className='event-image'  id="mini-1" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1fvsCNkZEtgSE6BQgMRnVve5JKWnyUKoj"/>
+                    <img className='event-image'  id="mini-2" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1p5KGAwsym6z08d1NMCARn-Q7AZkqfHwJ"/>
+                    <img className='event-image'  id="mini-3" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1oW1ZJBsYtUsgk8SOz0TpQHndyPGMoe83"/>
+                    <img className='event-image'  id="mini-4" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1UWyDmV6uanhhGBN8MpJ3bMAesuGdcW4G"/>
+                    <img className='event-image'  id="mini-5" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1HL16msExYXGJ9uiIHP1p11PW0EFY-Ify"/>
+                    <img className='event-image'  id="mini-6" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1ATz3a3f2rs7ydvAvkxivOjY-V0dSsV1-"/>
                 </div>
                 <button className="slider-button-mini right-handle" onClick={this.moveRight.bind(this)}>
                     <div className="text">&#8250;</div>

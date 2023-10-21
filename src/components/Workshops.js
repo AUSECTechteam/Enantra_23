@@ -27,8 +27,8 @@ class WorkShops extends Component {
     
       getMaxSlides() {
         const w = window.innerWidth;
-        if (w <= 500) this.setState({ maxSlides: 3 });
-        else if (w <= 1000) this.setState({ maxSlides: 2 });
+        if (w <= 500) this.setState({ maxSlides: 1 });
+        else if (w <= 1000) this.setState({ maxSlides: 1 });
         else this.setState({ maxSlides: 1 });
       }
     
@@ -75,12 +75,11 @@ class WorkShops extends Component {
                     <div className="text">&#8249;</div>
                 </button>
                 <div ref={this.sliderRef} className="slider-work">
-                    <img id="work-1" onClick={this.handleImageClick} src="https://via.placeholder.com/210/FFCCCB?text=A"/>
-                    <img id="work-2" onClick={this.handleImageClick} src="https://via.placeholder.com/220/FFCCCB?text=B"/>
-                    <img id="work-3" onClick={this.handleImageClick} src="https://via.placeholder.com/230/FFCCCB?text=C"/>
-                    <img id="work-4" onClick={this.handleImageClick} src="https://via.placeholder.com/240/FFCCCB?text=D"/>
-                    <img id="work-5" onClick={this.handleImageClick} src="https://via.placeholder.com/250/FFCCCB?text=E"/>
-                    <img id="work-6" onClick={this.handleImageClick} src="https://via.placeholder.com/250/FFCCCB?text=F"/>
+                  <img className='event-image' id="work-1" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1E946kRjhAkTZkrOvL78BfR4u6hyeYgFO"/>
+                  <img className='event-image' id="work-2" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1asDiWV0mfzBfCysxSfaxkI_X1va5NFLe"/>
+                  <img className='event-image' id="work-3" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1Qp87WzkpN32u1kJTsJD-zykrqdsV0dc-"/>
+                  <img className='event-image' id="work-4" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1XBnkOcmsH4hvUFM0J79m4BwZqjmKsBn1"/>
+                  <img className='event-image' id="work-5" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1n6Hymz0VmsvxIRqWf7AWvX_eEeabTS4o"/>
                 </div>
                 <button className="slider-button-work right-handle" onClick={this.moveRight.bind(this)}>
                     <div className="text">&#8250;</div>

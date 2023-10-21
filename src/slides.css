@@ -207,7 +207,7 @@
 
 body {
   margin: 0;
-  background-color: bloack;
+  background-color: black;
   color: white;
 }
 
@@ -215,7 +215,7 @@ body {
   display: flex;
   justify-content: center;
   overflow: hidden;
-  max-width: 99%;
+  max-width: 97.5%;
   /* margin-top: 5vh; */
 }
 
@@ -231,11 +231,13 @@ body {
   max-width: calc(100% / var(--items-per-screen-mini));
   aspect-ratio: 7 / 5;
   padding: var(--img-gap);
+  cursor: pointer;
+  /* object-fit: cover; */
 }
 
 .slider-button-mini {
   border: none;
-  background-color: grey;
+  background-color: rgba(20, 20, 20, 0.895);
   z-index: 10;
   margin: var(--img-gap) 0;
   width: var(--handle-size-mini);
@@ -261,7 +263,17 @@ body {
   background-color: none;
 }
 
-@media (max-width: 1000px) {
+.left-handle:hover
+{
+  background-color: rgba(0, 0, 0, 0.589);
+}
+
+.right-handle:hover
+{
+  background-color: rgba(74, 74, 74, 0.589);
+}
+
+/* @media (max-width: 1000px) {
   :root{
       --items-per-screen-mini: 2;
   }
@@ -270,8 +282,8 @@ body {
 @media (max-width: 500px) {
   :root{
       --items-per-screen-mini: 2;
-  }
-}
+  } */
+/* } */
 
 /* MINIEVENTS css ends */
 
@@ -281,7 +293,7 @@ body {
 :root {
   --handle-size-mega: 3rem;
   --img-gap: 1rem;  /* Change this to adjust carousel picture size */
-  --items-per-screen-mega: 2;
+  --items-per-screen-mega: 3;
   --slider-index: 0;
 }
 
@@ -295,7 +307,7 @@ body {
   display: flex;
   justify-content: center;
   overflow: hidden;
-  max-width: 99%;
+  max-width: 97.5%;
   /* margin-top: 5vh; */
 }
 
@@ -311,6 +323,8 @@ body {
   max-width: calc(100% / var(--items-per-screen-mega));
   aspect-ratio: 7 / 5;
   padding: var(--img-gap);
+  cursor: pointer;
+  /* object-fit: cover; */
 }
 
 .slider-button-mega {
@@ -332,15 +346,16 @@ body {
   background-color: rgba(0, 0, 0, 0.589);
 }
 
+.right-handle:hover
+{
+  background-color: rgba(74, 74, 74, 0.589);
+}
+
 .left-handle {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-.right-handle:hover
-{
-  background-color: rgba(74, 74, 74, 0.589);
-}
 .right-handle {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -350,7 +365,7 @@ body {
   background-color: none;
 }
 
-@media (max-width: 1000px) {
+/* @media (max-width: 1000px) {
   :root{
       --items-per-screen-mega: 2;
   }
@@ -360,7 +375,7 @@ body {
   :root{
       --items-per-screen-mega: 2;
   }
-}
+} */
 
 /* MegaEvents css ends */
 
@@ -388,7 +403,7 @@ body {
   display: flex;
   justify-content: center;
   overflow: hidden;
-  max-width: 99%;
+  max-width: 97.5%;
   /* margin-top: 5vh; */
 }
 
@@ -404,11 +419,13 @@ body {
   max-width: calc(100% / var(--items-per-screen-work));
   aspect-ratio: 7 / 5;
   padding: var(--img-gap);
+  cursor: pointer;
+  /* object-fit: cover; */
 }
 
 .slider-button-work {
   border: none;
-  background-color: grey;
+  background-color: rgba(20, 20, 20, 0.895);
   z-index: 10;
   margin: var(--img-gap) 0;
   width: var(--handle-size-work);
@@ -434,7 +451,17 @@ body {
   background-color: none;
 }
 
-@media (max-width: 1000px) {
+.left-handle:hover
+{
+  background-color: rgba(0, 0, 0, 0.589);
+}
+
+.right-handle:hover
+{
+  background-color: rgba(74, 74, 74, 0.589);
+}
+
+/* @media (max-width: 1000px) {
   :root{
       --items-per-screen-work: 2;
   }
@@ -444,6 +471,6 @@ body {
   :root{
       --items-per-screen-work: 2;
   }
-}
+} */
 
 /* WORKSHOPS css ends */
