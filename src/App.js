@@ -155,11 +155,11 @@ function App() {
       </div>
 
       {/*Pop Up message to rotate the screen*/}
-      <div class="popup">
-        <div class="popup-content">
+      <div className="popup">
+        <div className="popup-content">
           <h2>Please Rotate Your Device</h2>
           <p>This website is best viewed in landscape mode.</p>
-          <img src="https://drive.google.com/uc?export=view&id=1dEGrS0f6deNBwcgkiBqSWqFZSV-sO9jC" class="rt"/>
+          <img src="https://drive.google.com/uc?export=view&id=1dEGrS0f6deNBwcgkiBqSWqFZSV-sO9jC" className="rt"/>
         </div>
       </div>
 
