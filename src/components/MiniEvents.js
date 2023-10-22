@@ -66,6 +66,7 @@ class MiniEvents extends Component {
     handleImageClick = (event) => {
       const clickedImageId = event.target.id;
       console.log(`Clicked image ID: ${clickedImageId}`);
+      
     }
 
     render() {
