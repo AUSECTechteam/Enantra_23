@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class WorkShops extends Component {
+class Sponsor extends Component {
     
     constructor(props) {
         super(props);
@@ -70,19 +70,23 @@ class WorkShops extends Component {
 
     render() {
         return(
-            <div className="carousel-container-work">
-                <button className="slider-button-work left-handle" onClick={this.moveLeft.bind(this)}>
+            <div className="carousel-container-spon">
+                <button className="slider-button-spon left-handle" onClick={this.moveLeft.bind(this)}>
                     <div className="text">&#8249;</div>
                 </button>
-                <div ref={this.sliderRef} className="slider-work">
-                  <img className='event-image' id="work-1" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=15bWCJgXHwMNP_C41c-r7fHC7-Qhk7PBA"/>
-                  <img className='event-image' id="work-2" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1j_w0R9fg5T6pX4ulQS99cYpPHKufc-S0"/>
-                  <img className='event-image' id="work-3" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1_Jy5YLOUYlmoytdDaVkY3nxHF-7Wgs8L"/>
-                  <img className='event-image' id="work-4" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1lK-hbM3dxiajihxtWbcU_0QDfOLrX6bl"/>
-                  <img className='event-image' id="work-1" onClick={this.handleImageClick} src="https://fakeimg.pl/700x400/000000/c7b018?text=STAY+TUNED!&font=museo"/>
-                  <img className='event-image' id="work-5" onClick={this.handleImageClick} src="https://fakeimg.pl/700x400/000000/c7b018?text=STAY+TUNED!&font=museo"/>
+                <div ref={this.sliderRef} className="slider-spon">
+                    <img className='event-image'  id="spon-1" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=12DIWtAK7mt9DalTPY6npC_hMdIGbutTp"/>
+                    <img className='event-image'  id="spon-2" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1Zb1XBu-byFW1-LNd2fK290cTz1JjrmPD"/>
+                    <img className='event-image'  id="spon-3" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1wxlvPda2qkxFwRELaxQHoVwFZaWadrV-"/>
+                    <img className='event-image'  id="spon-4" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1vkvDRlaYrCEyuSnqnhTfxj3lnWoc5Hwg"/>
+                    <img className='event-image'  id="spon-5" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1nZi7XYrNGDjG87GDgvH0YSRz7c2ZR3xr"/>
+                    <img className='event-image'  id="spon-6" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1TqF2ABqxW3EYY4LeNYRZWNPfuHSsxjR3"/>
+                    <img className='event-image'  id="spon-7" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1CtyKIzOdb3BfJfNhVM-kWITLd2jUxkRf"/>
+                    <img className='event-image'  id="spon-8" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=14RHXNmBIXq3nACY-QNdBvL3eHiupCJmj"/>
+                    <img className='event-image'  id="spon-9" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=10eeh07N1of3h1vWivC4S9_hwLkRg6WML"/>
+                    <img className='event-image'  id="spon-10" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1VVbwrI7ilSciFL7VMCzOi_7PmtDuARn2"/>
                 </div>
-                <button className="slider-button-work right-handle" onClick={this.moveRight.bind(this)}>
+                <button className="slider-button-spon right-handle" onClick={this.moveRight.bind(this)}>
                     <div className="text">&#8250;</div>
                 </button>
             </div>
@@ -90,4 +94,4 @@ class WorkShops extends Component {
     }
 }
 
-export default WorkShops;
+export default Sponsor;

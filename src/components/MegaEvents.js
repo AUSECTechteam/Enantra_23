@@ -75,10 +75,12 @@ class MegaEvents extends Component {
                     <div className="text">&#8249;</div>
                 </button>
                 <div ref={this.sliderRef} className="slider-mega">
-                  <img className='event-image' id="mega-1" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1iOZWpmm6jFLfyBAZ15mGuJjCxcIJH0qp"/>
-                  <img className='event-image' id="mega-2" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1c3nfYlYZb9GsqEdvDd6j9d0PV4kQXcx8"/>
-                  <img className='event-image' id="mega-3" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1PasOfCd67tIkoBIxd6mnaAPP0IwUDRB-"/>
-                  <img className='event-image' id="mega-4" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=17pZqNZfylT83mVcIX9cxkmQjFuKWakYy"/>
+                  <img className='event-image' id="mega-1" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1hPilv053uWK_gaQrNOmKwpfi6qfOz_L_"/>
+                  <img className='event-image' id="mega-2" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=10u14qWafWh27MiDv6Ah2EZGyEHQadEUO"/>
+                  <img className='event-image' id="mega-4" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1FlH64tN7GDziQ2n7bBkilnly2eguZDRH"/>
+                  <img className='event-image' id="mega-1" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1hPilv053uWK_gaQrNOmKwpfi6qfOz_L_"/>
+                  <img className='event-image' id="mega-2" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=10u14qWafWh27MiDv6Ah2EZGyEHQadEUO"/>
+                  <img className='event-image' id="mega-3" onClick={this.handleImageClick} src="https://fakeimg.pl/700x400/000000/c7b018?text=STAY+TUNED!&font=museo"/>
                 </div>
                 <button className="slider-button-mega right-handle" onClick={this.moveRight.bind(this)}>
                     <div className="text">&#8250;</div>

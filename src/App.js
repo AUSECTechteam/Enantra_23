@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import MegaEvents from './components/MegaEvents';
 import MiniEvents from './components/MiniEvents';
 import WorkShops from './components/Workshops';
+import SixDegree from './components/SixDegree';
+import Sponsor from './components/Sponsors';
 import './App.css';
 import './slides.css';
 
@@ -139,13 +141,17 @@ function App() {
           <div class="Events_container">
             <p className='event-text'>Mega Events</p>
             <MegaEvents/><br/>
+            <p className='event-text'>6DT (Six Degree Talks)</p>
+            <SixDegree/><br/>
             <p className='event-text'>Mini Events</p>
             <MiniEvents/><br/>
             <p className='event-text'>Workshops</p>
             <WorkShops/><br/><br/>
+            <p className='event-text'>Previous Sponsors</p>
+            <Sponsor/><br/><br/>
             <div id="footer">
-              <p>&copy; Enanthra 2018-2023</p>
-              <a href="#vidd" id="goToTop">Go to Top</a>
+              <p id="foot-text"> Enantra &copy; 2018-2023</p>
+              <a href="#vidd" id="goToTop">Go to Top</a><br/><br/>
             </div>
           </div>
 

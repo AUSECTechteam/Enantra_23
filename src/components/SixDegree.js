@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class WorkShops extends Component {
+class SixDegree extends Component {
     
     constructor(props) {
         super(props);
@@ -27,9 +27,9 @@ class WorkShops extends Component {
     
       getMaxSlides() {
         const w = window.innerWidth;
-        if (w <= 500) this.setState({ maxSlides: 1 });
-        else if (w <= 1000) this.setState({ maxSlides: 1 });
-        else this.setState({ maxSlides: 1 });
+        if (w <= 500) this.setState({ maxSlides: 2 });
+        else if (w <= 1000) this.setState({ maxSlides: 2 });
+        else this.setState({ maxSlides: 2 });
       }
     
       moveRight() {
@@ -70,19 +70,20 @@ class WorkShops extends Component {
 
     render() {
         return(
-            <div className="carousel-container-work">
-                <button className="slider-button-work left-handle" onClick={this.moveLeft.bind(this)}>
+            <div className="carousel-container-six">
+                <button className="slider-button-six left-handle" onClick={this.moveLeft.bind(this)}>
                     <div className="text">&#8249;</div>
                 </button>
-                <div ref={this.sliderRef} className="slider-work">
-                  <img className='event-image' id="work-1" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=15bWCJgXHwMNP_C41c-r7fHC7-Qhk7PBA"/>
-                  <img className='event-image' id="work-2" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1j_w0R9fg5T6pX4ulQS99cYpPHKufc-S0"/>
-                  <img className='event-image' id="work-3" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1_Jy5YLOUYlmoytdDaVkY3nxHF-7Wgs8L"/>
-                  <img className='event-image' id="work-4" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1lK-hbM3dxiajihxtWbcU_0QDfOLrX6bl"/>
-                  <img className='event-image' id="work-1" onClick={this.handleImageClick} src="https://fakeimg.pl/700x400/000000/c7b018?text=STAY+TUNED!&font=museo"/>
-                  <img className='event-image' id="work-5" onClick={this.handleImageClick} src="https://fakeimg.pl/700x400/000000/c7b018?text=STAY+TUNED!&font=museo"/>
+                <div ref={this.sliderRef} className="slider-six">
+                    <img className='event-image'  id="six-1" onClick={this.handleImageClick} src="https://fakeimg.pl/700x400/000000/c7b018?text=STAY+TUNED!&font=museo"/>
+                    <img className='event-image'  id="six-2" onClick={this.handleImageClick} src="https://fakeimg.pl/700x400/000000/c7b018?text=STAY+TUNED!&font=museo"/>
+                    <img className='event-image'  id="six-3" onClick={this.handleImageClick} src="https://fakeimg.pl/700x400/000000/c7b018?text=STAY+TUNED!&font=museo"/>
+                    <img className='event-image'  id="six-4" onClick={this.handleImageClick} src="https://fakeimg.pl/700x400/000000/c7b018?text=STAY+TUNED!&font=museo"/>
+                    <img className='event-image'  id="six-5" onClick={this.handleImageClick} src="https://fakeimg.pl/700x400/000000/c7b018?text=STAY+TUNED!&font=museo"/>
+                    <img className='event-image'  id="six-6" onClick={this.handleImageClick} src="https://fakeimg.pl/700x400/000000/c7b018?text=STAY+TUNED!&font=museo"/>
+                    <img className='event-image'  id="six-7" onClick={this.handleImageClick} src="https://fakeimg.pl/700x400/000000/c7b018?text=STAY+TUNED!&font=museo"/>
                 </div>
-                <button className="slider-button-work right-handle" onClick={this.moveRight.bind(this)}>
+                <button className="slider-button-six right-handle" onClick={this.moveRight.bind(this)}>
                     <div className="text">&#8250;</div>
                 </button>
             </div>
@@ -90,4 +91,4 @@ class WorkShops extends Component {
     }
 }
 
-export default WorkShops;
+export default SixDegree;

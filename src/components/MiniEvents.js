@@ -80,7 +80,7 @@ class MiniEvents extends Component {
                     <img className='event-image'  id="mini-3" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1oW1ZJBsYtUsgk8SOz0TpQHndyPGMoe83"/>
                     <img className='event-image'  id="mini-4" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1UWyDmV6uanhhGBN8MpJ3bMAesuGdcW4G"/>
                     <img className='event-image'  id="mini-5" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1HL16msExYXGJ9uiIHP1p11PW0EFY-Ify"/>
-                    <img className='event-image'  id="mini-6" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1ATz3a3f2rs7ydvAvkxivOjY-V0dSsV1-"/>
+                    <img className='event-image'  id="mini-6" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1dCFv0H8o2OY7O1jiy3sTfLglN-zfs8I1"/>
                 </div>
                 <button className="slider-button-mini right-handle" onClick={this.moveRight.bind(this)}>
                     <div className="text">&#8250;</div>

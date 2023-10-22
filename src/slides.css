@@ -226,7 +226,7 @@ body {
 .slider-mini > img {
   flex: 0 0 calc(100% / var(--items-per-screen-mini));
   max-width: calc(100% / var(--items-per-screen-mini));
-  aspect-ratio: 7 / 5;
+  aspect-ratio: 1 / 1;
   padding: var(--img-gap);
   cursor: pointer;
   /* object-fit: cover; */
@@ -234,7 +234,7 @@ body {
 
 .slider-button-mini {
   border: none;
-  background-color: rgba(20, 20, 20, 0.895);
+  background-color: rgba(20, 20, 20);
   z-index: 10;
   margin: var(--img-gap) 0;
   width: var(--handle-size-mini);
@@ -275,7 +275,7 @@ body {
 .slider-mega > img {
   flex: 0 0 calc(100% / var(--items-per-screen-mega));
   max-width: calc(100% / var(--items-per-screen-mega));
-  aspect-ratio: 7 / 5;
+  aspect-ratio: 1 / 1;
   padding: var(--img-gap);
   cursor: pointer;
   /* object-fit: cover; */
@@ -283,7 +283,7 @@ body {
 
 .slider-button-mega {
   border: none;
-  background-color: rgba(20, 20, 20, 0.895);
+  background-color: rgba(20, 20, 20);
   z-index: 10;
   margin: var(--img-gap) 0;
   width: var(--handle-size-mega);
@@ -324,7 +324,7 @@ body {
 .slider-work > img {
   flex: 0 0 calc(100% / var(--items-per-screen-work));
   max-width: calc(100% / var(--items-per-screen-work));
-  aspect-ratio: 7 / 5;
+  aspect-ratio: 1 / 1;
   padding: var(--img-gap);
   cursor: pointer;
   /* object-fit: cover; */
@@ -332,7 +332,7 @@ body {
 
 .slider-button-work {
   border: none;
-  background-color: rgba(20, 20, 20, 0.895);
+  background-color: rgba(20, 20, 20);
   z-index: 10;
   margin: var(--img-gap) 0;
   width: var(--handle-size-work);
@@ -345,6 +345,102 @@ body {
 }
 
 /* WORKSHOPS css ends */
+
+/* 6DT css starts */
+
+:root {
+  --handle-size-six: 3rem;
+  --img-gap: 1rem;  /* Change this to adjust carousel picture size */
+  --items-per-screen-six: 3;
+  --slider-index: 0;
+}
+
+.carousel-container-six {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  max-width: 97.5%;
+}
+
+.slider-six {
+  display: flex;
+  flex-grow: 1;
+  margin: 0 var(--img-gap);
+  transform: translateX(-0%);
+}
+
+.slider-six > img {
+  flex: 0 0 calc(100% / var(--items-per-screen-six));
+  max-width: calc(100% / var(--items-per-screen-six));
+  aspect-ratio: 1 / 1;
+  padding: var(--img-gap);
+  cursor: pointer;
+  /* object-fit: cover; */
+}
+
+.slider-button-six {
+  border: none;
+  background-color: rgba(20, 20, 20);
+  z-index: 10;
+  margin: var(--img-gap) 0;
+  width: var(--handle-size-six);
+  cursor: pointer;
+  font-size: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+/* 6DT css ends */
+
+/* sponsors css starts */
+
+:root {
+  --handle-size-spon: 3rem;
+  --img-gap: 1rem;  /* Change this to adjust carousel picture size */
+  --items-per-screen-spon: 5;
+  --slider-index: 0;
+}
+
+.carousel-container-spon {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  max-width: 97.5%;
+}
+
+.slider-spon {
+  display: flex;
+  flex-grow: 1;
+  margin: 0 var(--img-gap);
+  transform: translateX(-0%);
+}
+
+.slider-spon > img {
+  flex: 0 0 calc(100% / var(--items-per-screen-spon));
+  max-width: calc(100% / var(--items-per-screen-spon));
+  aspect-ratio: 1 / 1;
+  padding: var(--img-gap);
+  cursor: pointer;
+  /* object-fit: cover; */
+}
+
+.slider-button-spon {
+  border: none;
+  background-color: rgba(20, 20, 20);
+  z-index: 10;
+  margin: var(--img-gap) 0;
+  width: var(--handle-size-spon);
+  cursor: pointer;
+  font-size: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+/* sponsors css ends */
 
 .left-handle {
   max-width: 5rem;
@@ -368,7 +464,18 @@ body {
 }
 
 #goToTop {
+  border: solid 2px;
+  padding: 8px;
+  border-radius: 15px;
   font-size: 16px;
   text-decoration: none;
   color: #fff;
+}
+
+#foot-text{
+  margin-bottom: 20px;
+}
+
+#goToTop:hover {
+    background-color: grey;
 }
