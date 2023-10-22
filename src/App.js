@@ -88,7 +88,7 @@ function App() {
         <div className="container">
           
           {/*  Investiture Promotional Video */}
-          <video className="Investiture1" preload="auto" muted={isVideoMuted}  autoPlay={isVideoPlaying} loop >
+          <video id="vidd" className="Investiture1" preload="auto" muted={isVideoMuted}  autoPlay={isVideoPlaying} loop >
             <source
               src="https://drive.google.com/uc?export=download&id=1gEvm_Zkf1VukB3kB1WPRvQQN4-mZynR-"
               type="video/mp4"
@@ -142,8 +142,14 @@ function App() {
             <p className='event-text'>Mini Events</p>
             <MiniEvents/><br/>
             <p className='event-text'>Workshops</p>
-            <WorkShops/>
+            <WorkShops/><br/><br/>
+            <div id="footer">
+              <p>&copy; Enanthra 2018-2023</p>
+              <a href="#vidd" id="goToTop">Go to Top</a>
+            </div>
           </div>
+
+          
 
           {/* Gradient to blend in the video */}
           <div className="trans-slideshow"></div>

@@ -71,7 +71,7 @@ class MegaEvents extends Component {
     render() {
         return(
             <div className="carousel-container-mega">
-                <button className="slider-button-mega" onClick={this.moveLeft.bind(this)}>
+                <button className="slider-button-mega left-handle" onClick={this.moveLeft.bind(this)}>
                     <div className="text">&#8249;</div>
                 </button>
                 <div ref={this.sliderRef} className="slider-mega">
@@ -80,7 +80,7 @@ class MegaEvents extends Component {
                   <img className='event-image' id="mega-3" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1PasOfCd67tIkoBIxd6mnaAPP0IwUDRB-"/>
                   <img className='event-image' id="mega-4" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=17pZqNZfylT83mVcIX9cxkmQjFuKWakYy"/>
                 </div>
-                <button className="slider-button-mega" onClick={this.moveRight.bind(this)}>
+                <button className="slider-button-mega right-handle" onClick={this.moveRight.bind(this)}>
                     <div className="text">&#8250;</div>
                 </button>
             </div>
