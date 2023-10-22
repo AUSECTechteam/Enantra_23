@@ -45,7 +45,7 @@ body
   left: 0;
   width: 100vw;
   overflow: hidden;
-  z-index: 50;
+  z-index: 20;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
   padding: 1.5vh;
 }
@@ -70,23 +70,15 @@ body
 }
 
 .logo {
-  height: 7vh;  
+  height: 3.5vw;  
   
 }
 
-/*  Enantra */
-.overlay-text{
-  position: absolute;
-  top: 53vh;
-  left: 17vh;
-  z-index: 20;
-  color: white;
-  width: 100vw;
+.logo_fill
+{
+  width:57vw;
 }
 
-.overlay-text p {
-font-size: 3vh;
-}
 
 .container {
 
@@ -101,21 +93,21 @@ font-size: 3vh;
   position: absolute;
   top: 78vh;
   left: 5vh;
-  z-index: 20;
+  z-index: 15;
 }
 
 .icn_size
 {
-  height:2.5vh;
+  height:3.5vh;
   width: auto;
   margin-right: 3vh;
 }
 
 .hello{
   position: absolute;
-  top: 68vh;
+  top: 69vh;
   left: 17vh;
-  z-index: 20;  
+  z-index: 15;  
 }
 
 
@@ -144,7 +136,7 @@ font-size: 3vh;
   border-radius: 5vh;
   height: 7vh;
   width: 7vh;
-  z-index: 20;
+  z-index: 15;
   right: 5vw;
   top:68vh;
   border: #ffffff;
@@ -176,8 +168,8 @@ margin-bottom: 10px;
   margin: 0;
   padding: 0;
   left:-1.5vh;
-  top:30vh;
-  z-index: 20;
+  top:20vh;
+  z-index: 15;
 }
 
 .glow-button {
@@ -186,16 +178,17 @@ margin-bottom: 10px;
   background-color: #ffffff;
   color: #000000;
   border: none;
-  width:23vh;
+  
   height: 7vh;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 2px;
   margin-right: 20px;
   padding: .5vh;
   font-size: 2.5vh;
   font-weight: 700;
   align-items: center;
   justify-content: center;
+  width:26vh;
 }
   
   .glow-button:hover {
@@ -224,7 +217,7 @@ margin-bottom: 10px;
   }
 .Investiture1
 {
-  z-index: 10;
+  z-index : 5;
   position: relative;
   top: 0;
   left: 0;
@@ -258,7 +251,7 @@ margin-bottom: 10px;
   width: 100vw;
   height: 50vw;
   
-  z-index: 15;
+  z-index: 10;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
   
 
@@ -293,6 +286,11 @@ margin-bottom: 10px;
   background-color: black;
 }
 
+.content
+{
+  position: relative;
+  top: -.75vh;
+}
 .popup-content {
   /* background: #fff; */
   padding: 20px;

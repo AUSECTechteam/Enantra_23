@@ -66,12 +66,12 @@ function App() {
 
       {/* If the body is in Landscape Mode */}
       <div className="body">
-        {/* Menu or Navigation Bar */}
+        {/* Menu or Navigation Bar  */}
         <div className={`navbar ${navbarClass}`} onMouseEnter={toggleVideo}>
           <a href="">
             <img
               className="logo"
-              src="https://drive.google.com/uc?export=view&id=1_oq4l8QMlKmNihexLrWxW0-5Rfwp8wwU"
+              src="https://drive.google.com/uc?export=view&id=1eSLErNhxikRJZCHLx9R7ECvZ-kMWwDKD"
               alt="Logo"
             />
           </a>
@@ -82,6 +82,34 @@ function App() {
           <a href="https://linktr.ee/ausec.official" className="space">
             Contact Us
           </a>
+          <a href="" class="space logo_fill">
+            {/*empty*/}
+          </a>
+
+          <a href="" >
+            <img
+                className="logo"
+                src="https://drive.google.com/uc?export=view&id=1_oq4l8QMlKmNihexLrWxW0-5Rfwp8wwU"
+                alt="Logo"
+              />
+          </a>
+
+          <a href="" >
+            <img
+                className="logo"
+                src="https://drive.google.com/uc?export=view&id=1VgQf8htQPL7jZW5ly46Owcz3a06BHqnj"
+                alt="Logo"
+              />
+          </a>
+
+          <a href="" >
+            <img
+                className="logo"
+                src="https://drive.google.com/uc?export=view&id=17-jBZ2t-z6rzS1UDwT_cDRGK3dntbFq3"
+                alt="Logo"
+              />
+          </a>
+
         </div>
 
         {/*  Promo Video Container */}
@@ -90,21 +118,15 @@ function App() {
           {/*  Investiture Promotional Video */}
           <video id="vidd" className="Investiture1" preload="auto" muted={isVideoMuted}  autoPlay={isVideoPlaying} loop >
             <source
-              src="https://drive.google.com/uc?export=download&id=1gEvm_Zkf1VukB3kB1WPRvQQN4-mZynR-"
+              src="https://drive.google.com/uc?export=download&id=1pIckBk0m_ClWGAlwTzAYRhjXkHh-sDpv"
               type="video/mp4"
             />
           </video>
           
           {/*  Enantra Logo */}
-          <img id="overlay-image" className="imgg" src="https://drive.google.com/uc?export=view&id=1AvmcdE3ltY3LTX449WJVqhUzt_-G0uK3"/>
+          <img id="overlay-image" className="imgg" src="https://drive.google.com/uc?export=view&id=1NjPwTCHPmu0noch8jPxUfrjeEhdIwZW_"/>
 
-          {/*  Enantra Gist */}
-          <div className="overlay-text">
-            <p>Enantra is an AU courant entrepreneurship event aimed at envisioning<br/>
-            and empowering the youth with the spirit of entrepreneurship and the art<br/>
-            of corporate play.
-            </p>
-          </div>
+          
 
           {/*  Instagram and AUSEC official page links */}
           <div className="hello">
@@ -116,11 +138,11 @@ function App() {
                 </div>
               </button> 
             </a>
-            <a href="https://auced.com/ausec/" target="_blank">
+            <a href="https://www.linkedin.com/in/anna-university-student-entrepreneurship-club-ausec/" target="_blank">
               <button className="glow-button2" type="button" value="More info">
                 <div className="button_text">
-                  <img className="icn_size sizing"  src="https://drive.google.com/uc?export=view&id=1nO_DPHSyUVRezuACV5k01tIx02TmHZDa"/>
-                  More info
+                  <img className="icn_size sizing"  src="https://drive.google.com/uc?export=view&id=1DZwmI4e95q__40vjLMUwDu2PJU6EpoC9"/>
+                  <span class="content">LinkedIn</span>
                 </div>
               </button>
             </a>
@@ -144,7 +166,7 @@ function App() {
             <p className='event-text'>Workshops</p>
             <WorkShops/><br/><br/>
             <div id="footer">
-              <p>&copy; Enanthra 2018-2023</p>
+              <p>&copy; Enantra 2018-2023</p>
               <a href="#vidd" id="goToTop">Go to Top</a>
             </div>
           </div>
