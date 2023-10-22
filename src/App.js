@@ -82,11 +82,11 @@ function App() {
           <a href="https://linktr.ee/ausec.official" className="space">
             Contact Us
           </a>
-          <a href="" class="space logo_fill">
+          <a href="" class="space" style={{float:'right'}}>
             {/*empty*/}
           </a>
 
-          <a href="" >
+          <a href=""  style={{float:'right'}}>
             <img
                 className="logo"
                 src="https://drive.google.com/uc?export=view&id=1_oq4l8QMlKmNihexLrWxW0-5Rfwp8wwU"
@@ -94,7 +94,7 @@ function App() {
               />
           </a>
 
-          <a href="" >
+          <a href="" style={{float:'right'}}>
             <img
                 className="logo"
                 src="https://drive.google.com/uc?export=view&id=1VgQf8htQPL7jZW5ly46Owcz3a06BHqnj"
@@ -102,7 +102,7 @@ function App() {
               />
           </a>
 
-          <a href="" >
+          <a href="" style={{float:'right'}}>
             <img
                 className="logo"
                 src="https://drive.google.com/uc?export=view&id=17-jBZ2t-z6rzS1UDwT_cDRGK3dntbFq3"
