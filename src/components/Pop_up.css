@@ -1,0 +1,230 @@
+
+.blur .img_icn
+{
+  position: absolute;
+  padding: .75vh;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  
+}
+.blur
+{
+  z-index: 1000;
+  position: fixed;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+  background: rgba(0, 0, 0, 0.169); /* Adjust the background color and opacity as needed */
+}
+
+.blur .box
+{
+  display: block;
+  position: fixed;
+  top: 2.5vh;
+  left: 20vw;
+  width: 60vw;
+  height: 95vh;
+  background-color: rgb(0, 0, 0);
+  border-radius: 8px;
+  overflow-y: auto;
+}
+
+.blur .content
+{
+  height: auto;
+  width: 100%;
+  background-color: #030303;
+}
+
+.box::-webkit-scrollbar {
+  width: 8px; /* Set the desired scrollbar width */
+}
+
+.box::-webkit-scrollbar-thumb {
+  background: #333; /* Scrollbar thumb color (matches background) */
+  border-radius: 8px; /* Rounded thumb */
+}
+
+.box::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Hover state color for the thumb */
+}
+
+/* Style for the close button container */
+.blur .close {
+  width: 4vh; /* Adjust the size as needed */
+  height: 4vh;
+  cursor: pointer;
+  position: absolute;
+  right:2px;
+  top: 2px;
+  background-color: #000000bf;
+  border-radius: 100%;
+  color: white;
+  font-weight: 5; /* Adjust the font style as needed */
+  cursor: pointer;
+  z-index: 10;
+}
+
+.blur .close p {
+  font-family: Arial, sans-serif;
+  margin-top: 5px;
+  text-align: center; /* Horizontal centering within the text */
+}
+
+.blur .video-container {
+  width: 100%; /* Set the desired width for the container */
+  max-width: 100%; /* Ensure the video does not exceed the container's width */
+  position: relative;
+  top: -7vh;
+  height: auto;
+}
+
+video {
+  width: 100%; /* Set the video width to 100% of its container */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+.blur .volume_button{
+  cursor: pointer;
+  background-color: #ffffff08;
+  position: absolute;
+  border-radius: 5vh;
+  height: 5vh;
+  width: 5vh;
+  z-index: 20;
+  bottom: 10px;
+  right: 10px;
+  border: #ffffff;
+  border-color: aliceblue;
+  border-style: double;
+  padding-top: 3px;
+}
+
+.blur .volume_button:hover{
+  background-color: #ffffff5b;
+}
+.blur .volume{
+  
+  width: 90%;
+  height: auto;
+}
+
+.blur .Translate
+{
+  position: absolute;
+  bottom: 0vh;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 37vh;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)); /* Black to transparent gradient */
+  
+}
+
+.blur .glow-button {
+
+  background-color: #ffffff;
+  color: #000000;
+  z-index: 300;
+  border: none;
+  width:23vh;
+  height: 5vh;;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 5px;
+  margin-left: 5vh ;
+  margin-right: 3vh;
+  font-size: 2.5vh;
+  font-weight: 700;
+  position: relative;
+  top: 70%;
+  }
+  
+  .blur .glow-button:hover {
+    background-color: #ffffff9e;
+    
+  }
+  .blur .glow-button2 {
+  position: relative;
+  top: 70%;
+  background-color: #252525bb;
+  color: #ffffff;
+  border: none;
+  width:22vh;
+  height: 5vh;;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-right: 20px;
+  padding: 5px;
+  font-size: 2.5vh;
+  
+  }
+
+  .blur .button_text
+  {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding-left: 1vh;
+  }
+  
+  .blur .icn_size
+{
+  
+  height:2vh;
+  width: auto;
+}
+.blur .img_icn
+{
+  position: relative;
+  top: -.25vh;
+  left: -1vh;
+}
+
+  .blur .glow-button2:hover {
+  
+    background-color: #0c0c0cc4;
+    
+  }
+
+.blur .About_info
+{
+  width: 60%; /* Set the desired width for the container */
+  position: relative;
+  top: -7vh;
+  height: auto;
+  margin-left: 5%;
+  float:left;
+  height: 70vh;
+  padding-bottom: 10vh;
+  color: #ffffff;
+}
+
+.blur .Details
+{
+  width: 30%; /* Set the desired width for the container */
+  position: relative;
+  top: -7vh;
+  height: auto;
+  
+  margin-left: 5%;
+  float:left;
+  height: 70vh;
+  padding-bottom: 10vh;
+  color: #ffffff;
+}
+
+.blur .Event_tittle
+{
+  position: absolute;
+  top:50%;
+  left:-4vw;
+  width:auto;
+  height: 30%;
+}
+

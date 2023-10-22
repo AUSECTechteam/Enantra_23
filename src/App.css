@@ -332,3 +332,9 @@ margin-bottom: 10px;
     display: flex;
   }
 }
+
+.block
+{
+  display: none;
+  z-index: -1000;
+}
