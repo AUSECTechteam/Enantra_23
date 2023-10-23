@@ -19,9 +19,9 @@ function Popup({ onClose, imageId }) {
 
   return (
     data_present && (  <div className="blur" >
-      <div className="box" onMouseLeave={onClose}>
+      <div className="box" >
         <div className="content" >
-          {/* Close button */}
+          {/* Close button onMouseLeave={onClose}*/}
           <div className="close" onClick={onClose}>
             <p>X</p>
           </div>
@@ -48,7 +48,7 @@ function Popup({ onClose, imageId }) {
               </button>
             </a>
 
-            {/* Contact button */}
+            {/* Contact button 
             <a href={data[type][num-1]["contact-number"][0]} target="_blank">
               <button class="glow-button2" type="button" value="More info">
                 <div class="button_text">
@@ -56,13 +56,13 @@ function Popup({ onClose, imageId }) {
                 </div>
               </button>
             </a>
+            */}
 
           </div>
 
           <div class="About_info">
-            <h4>
-            {data[type][num-1]["about-event"]}
-            </h4>
+            <h4 className='EventName'>{data[type][num-1]["event-name"]}</h4>
+            <p>{data[type][num-1]["about-event"]}</p>
               
             <br></br>
 
@@ -70,7 +70,7 @@ function Popup({ onClose, imageId }) {
 
             
             <div className='contact-info'>
-                <h2 className='about-event'>CONTACT US</h2>
+              <h4 className='EventName'>Contact Us</h4>
                 
                 <p className='contact-us' >{data[type][num-1]['contact-name'][0]}</p>
                 <img src={contact} className='contact-img'></img>
@@ -86,6 +86,7 @@ function Popup({ onClose, imageId }) {
 
 
           <div class="Details">
+            <h4 className='EventName'>Details</h4>
             <p>Date: {data[type][num-1]["event-date"]}</p>
             <p>Time: {data[type][num-1]["start-time"]}</p>
             <p>Venue: {data[type][num-1]["event-location"]}</p>

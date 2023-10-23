@@ -31,13 +31,16 @@
   background-color: rgb(0, 0, 0);
   border-radius: 8px;
   overflow-y: auto;
+  
 }
 
 .blur .content
 {
   height: auto;
   width: 100%;
-  background-color: #030303;
+  background-color: #000000;
+  padding-bottom: 2vh;
+  border: solid red;
 }
 
 .box::-webkit-scrollbar {
@@ -122,7 +125,8 @@
   margin-left: 10%;
   color: white;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 3vh;
+  
 }
 
 
@@ -134,6 +138,7 @@
 
 .blur .contact-info .about-event {
   margin-left: 0%;
+  padding-bottom: 3vh;
 }
 
 .blur .contact-one{
@@ -143,7 +148,7 @@
   margin-bottom: -20px;
   color: white;
   font-weight: normal;
-  font-size: large;
+  font-size: 3vh;
 }
 
 
@@ -154,7 +159,7 @@
   margin-bottom: 100px;
   color: white;
   font-weight: normal;
-  font-size: large;
+  font-size: 3vh;
 }
 
 
@@ -208,7 +213,7 @@
   .blur .glow-button2 {
   position: absolute;
   bottom: 7vh;
-  left: 23%;
+  left: 16vw;
   background-color: #252525bb;
   color: #ffffff;
   border: none;
@@ -253,6 +258,10 @@
     
   }
 
+.blur .EventName
+{
+  font-size: 4vh;
+}
 .blur .About_info
 {
   width: 60%; /* Set the desired width for the container */
