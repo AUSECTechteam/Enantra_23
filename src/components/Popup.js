@@ -9,6 +9,14 @@ function Popup({ onClose, imageId }) {
   const type = myarray[0];
   const num = Number(myarray[1]);
   let data_present = true;
+  let event = true;
+  if (data[type][num - 1]["event-name"] === "GenZ Bazaar")
+    event = false;
+  else
+  {
+    console.log(data[type][num - 1]["event-name"]);
+    event = true;
+  }
   if( data[type][num-1] )
     console.log(imageId);
   else
@@ -39,6 +47,7 @@ function Popup({ onClose, imageId }) {
             }
 
             {/* Register button */}
+            { event &&
             <a href={data[type][num-1]["reg-link"]} 
             target="_blank">
               <button class="glow-button" type="button" value="insta">
@@ -46,7 +55,7 @@ function Popup({ onClose, imageId }) {
                 Buy Tickets
                 </div>
               </button>
-            </a>
+            </a>}
 
             {/* Contact button 
             <a href={data[type][num-1]["contact-number"][0]} target="_blank">
