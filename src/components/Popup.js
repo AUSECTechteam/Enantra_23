@@ -8,11 +8,17 @@ function Popup({ onClose, imageId }) {
   let myarray = imageId.split("-");
   const type = myarray[0];
   const num = Number(myarray[1]);
-  console.log(data[type][num-1]["video-status"]);
-
+  let data_present = true;
+  if( data[type][num-1] )
+    console.log(imageId);
+  else
+  {  
+    console.log("It is not present");
+    data_present = false;
+  }
 
   return (
-    <div className="blur" >
+    data_present && (  <div className="blur" >
       <div className="box" onMouseLeave={onClose}>
         <div className="content" >
           {/* Close button */}
@@ -23,7 +29,7 @@ function Popup({ onClose, imageId }) {
           {/* Video */}
           <div className="video-container">
 
-            {data[type][num-1]["img-status"] && <iframe class='video' src={data[type][num-1]["event-image"]}  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            {data[type][num-1]["img-status"] && <iframe class='video' src={data[type][num-1]["event-image"]}  frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
             </iframe>}
 
             {!data[type][num-1]["img-status"] && 
@@ -87,7 +93,7 @@ function Popup({ onClose, imageId }) {
           </div>
         </div>
       </div>
-    </div>
+    </div>)
   );
 }
 
