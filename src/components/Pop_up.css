@@ -123,8 +123,8 @@
   background-color: black;
   margin-left: 10%;
   color: white;
-  font-weight: bold;
-  font-size: 3vh;
+  font-weight: 400;
+  font-size: 4vh;
   
 }
 
@@ -138,13 +138,13 @@
 .blur .contact-info .about-event {
   margin-left: 0%;
   padding-bottom: 3vh;
+  
 }
 
 .blur .contact-one{
   background-color: black;
-  margin-left: 15%;
-  margin-top: -6%;
-  margin-bottom: -20px;
+  margin-left: 10%;
+  margin-top: -2%;
   color: white;
   font-weight: normal;
   font-size: 3vh;
@@ -163,7 +163,12 @@
 
 
 .blur .contact-info {
-  margin-top: -4%;
+  
+  border: solid red;
+  height: fit-content;
+  width: 100%;
+  padding: 5%;
+  background-color: #ffffff;
 }
 
 .blur .volume_button:hover{
@@ -202,7 +207,7 @@
   font-size: 2.5vh;
   font-weight: 700;
   position: absolute;
-  bottom: 7vh;
+  bottom: 12vh;
   }
   
   .blur .glow-button:hover {
@@ -267,27 +272,27 @@
   position: relative;
   text-align:justify;
   top: 0vh;
-  height: auto;
   margin-left: 5%;
+  margin-right: 5%;
   margin-bottom: 5%;
   float:left;
-  height: 70vh;
+  
   padding-bottom: 10vh;
   color: #ffffff;
+ 
+  
   
 }
 
 .blur .Details
 {
-  width: 30%; /* Set the desired width for the container */
-  position: relative;
-  top: 0vh;
-  height: auto;
+  
+  width: 25%; /* Set the desired width for the container */
   margin-left: 5%;
   float:left;
-  height: 70vh;
   padding-bottom: 10vh;
   color: #ffffff;
+
 }
 
 .blur .Event_tittle
@@ -297,4 +302,26 @@
   left:-4vw;
   width:auto;
   height: 30%;
+}
+
+.contact_box
+{
+  width:50%;
+  float:left;
+  height: 16vh;
+}
+
+.contact_info
+{
+  width: 90%; /* Set the desired width for the container */
+  
+  height: fit-content;
+  margin-left: 5%;
+  margin-right: 5%;
+  
+  float:left;
+  height: fit-content;
+  padding-bottom: 10vh;
+  color: #ffffff;
+  
 }

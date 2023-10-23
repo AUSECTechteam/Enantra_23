@@ -62,26 +62,7 @@ function Popup({ onClose, imageId }) {
 
           <div class="About_info">
             <h4 className='EventName'>{data[type][num-1]["event-name"]}</h4>
-            <p>{data[type][num-1]["about-event"]}</p>
-              
-            <br></br>
-
-            <br></br>
-
-            
-            <div className='contact-info'>
-              <h4 className='EventName'>Contact Us</h4>
-                
-                <p className='contact-us' >{data[type][num-1]['contact-name'][0]}</p>
-                <img src={contact} className='contact-img'></img>
-                <br></br>
-                <p className='contact-one'>{data[type][num-1]['contact-number'][0]}</p>
-                <br></br>
-                <p className='contact-us'>{data[type][num-1]['contact-name'][1]}</p>
-                <img src={contact} className='contact-img'></img>
-                <p className='contact-two'>{data[type][num-1]['contact-number'][1]}</p>
-            </div>
-            
+            <p>{data[type][num-1]["about-event"]}</p>  
           </div>
 
 
@@ -90,9 +71,33 @@ function Popup({ onClose, imageId }) {
             <p>Date: {data[type][num-1]["event-date"]}</p>
             <p>Time: {data[type][num-1]["start-time"]}</p>
             <p>Venue: {data[type][num-1]["event-location"]}</p>
-            <p>Fees: {data[type][num-1]["event-fee"]}</p>
+            <p>Cost: &#8377; {data[type][num-1]["event-fee"]}</p>
           </div>
-        </div>
+
+          <div class="contact_info">
+            <h4 className='EventName'>Contact Us</h4>
+            <div class="contact_box">
+              <p className='contact-us' >{data[type][num-1]['contact-name'][0]}</p>
+              <p className='contact-one'>+91 {data[type][num-1]['contact-number'][0]}</p>
+            </div>
+            
+            <div class="contact_box">
+              <p className='contact-us'>{data[type][num-1]['contact-name'][1]}</p>
+              <p className='contact-one'>+91 {data[type][num-1]['contact-number'][1]}</p>
+            </div>  
+            
+          </div>
+
+          
+
+          
+
+          
+
+     </div>
+
+        
+
       </div>
     </div>)
   );
