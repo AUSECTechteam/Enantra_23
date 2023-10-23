@@ -1,15 +1,22 @@
 import React, { Component } from 'react';
-
+import Popup from './Popup';
 class MiniEvents extends Component {
     
     constructor(props) {
         super(props);
         this.state = {
+          clickedImageId: "",
+          isOpen: false,
           slideNum: 0,
           maxSlides: 9,
         };
         this.sliderRef = React.createRef();
       }
+
+      closePopup = () => {
+        this.setState({ isOpen: false });
+      };
+      
     
       componentDidMount() {
         this.getMaxSlides();
@@ -64,12 +71,18 @@ class MiniEvents extends Component {
     };
 
     handleImageClick = (event) => {
-      const clickedImageId = event.target.id;
-      console.log(`Clicked image ID: ${clickedImageId}`);
+      this.setState
+      ({ 
+        isOpen: true,
+        clickedImageId: event.target.id,
+       });
+
+      console.log(`Clicked image ID: ${event.target.id}`);
       
     }
 
     render() {
+      const { clickedImageId,isOpen } = this.state;
         return(
             <div className="carousel-container-mini">
                 <button className="slider-button-mini left-handle" onClick={this.moveLeft.bind(this)}>
@@ -86,6 +99,8 @@ class MiniEvents extends Component {
                 <button className="slider-button-mini right-handle" onClick={this.moveRight.bind(this)}>
                     <div className="text">&#8250;</div>
                 </button>
+
+                {isOpen && (<Popup onClose={this.closePopup} imageId={clickedImageId} class="drop_down" ></Popup>)}
             </div>
         );
     }
