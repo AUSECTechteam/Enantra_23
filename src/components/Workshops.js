@@ -1,15 +1,22 @@
 import React, { Component } from 'react';
-
+import Popup from './Popup';
 class WorkShops extends Component {
     
     constructor(props) {
         super(props);
         this.state = {
+          clickedImageId: "",
+          isOpen: false,
           slideNum: 0,
           maxSlides: 9,
         };
         this.sliderRef = React.createRef();
       }
+
+      
+      closePopup = () => {
+        this.setState({ isOpen: false });
+      };
     
       componentDidMount() {
         this.getMaxSlides();
@@ -64,27 +71,37 @@ class WorkShops extends Component {
     };
 
     handleImageClick = (event) => {
-      const clickedImageId = event.target.id;
-      console.log(`Clicked image ID: ${clickedImageId}`);
+      
+      this.setState
+      ({ 
+        isOpen: true,
+        clickedImageId: event.target.id,
+       });
+
+      console.log(`Clicked image ID: ${event.target.id}`);
+      
     }
 
     render() {
+      const { clickedImageId,isOpen } = this.state;
         return(
             <div className="carousel-container-work">
                 <button className="slider-button-work left-handle" onClick={this.moveLeft.bind(this)}>
                     <div className="text">&#8249;</div>
                 </button>
                 <div ref={this.sliderRef} className="slider-work">
-                  <img className='event-image' id="work-1" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=15bWCJgXHwMNP_C41c-r7fHC7-Qhk7PBA"/>
-                  <img className='event-image' id="work-2" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1j_w0R9fg5T6pX4ulQS99cYpPHKufc-S0"/>
-                  <img className='event-image' id="work-3" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1_Jy5YLOUYlmoytdDaVkY3nxHF-7Wgs8L"/>
-                  <img className='event-image' id="work-4" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1lK-hbM3dxiajihxtWbcU_0QDfOLrX6bl"/>
-                  <img className='event-image' id="work-1" onClick={this.handleImageClick} src="https://fakeimg.pl/700x400/000000/c7b018?text=STAY+TUNED!&font=museo"/>
-                  <img className='event-image' id="work-5" onClick={this.handleImageClick} src="https://fakeimg.pl/700x400/000000/c7b018?text=STAY+TUNED!&font=museo"/>
+                  <img className='event-image' id="workshops-1" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=15bWCJgXHwMNP_C41c-r7fHC7-Qhk7PBA"/>
+                  <img className='event-image' id="workshops-2" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1j_w0R9fg5T6pX4ulQS99cYpPHKufc-S0"/>
+                  <img className='event-image' id="workshops-3" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1_Jy5YLOUYlmoytdDaVkY3nxHF-7Wgs8L"/>
+                  <img className='event-image' id="workshops-4" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1lK-hbM3dxiajihxtWbcU_0QDfOLrX6bl"/>
+                  <img className='event-image' id="workshops-1" onClick={this.handleImageClick} src="https://fakeimg.pl/700x400/000000/c7b018?text=STAY+TUNED!&font=museo"/>
+                  <img className='event-image' id="workshops-5" onClick={this.handleImageClick} src="https://fakeimg.pl/700x400/000000/c7b018?text=STAY+TUNED!&font=museo"/>
                 </div>
                 <button className="slider-button-work right-handle" onClick={this.moveRight.bind(this)}>
                     <div className="text">&#8250;</div>
                 </button>
+
+                {isOpen && (<Popup onClose={this.closePopup} imageId={clickedImageId} class="drop_down" ></Popup>)}
             </div>
         );
     }

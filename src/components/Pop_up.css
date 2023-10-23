@@ -10,7 +10,7 @@
 }
 .blur
 {
-  z-index: 1000;
+  z-index: 10000;
   position: fixed;
   top: 0px;
   width: 100vw;
@@ -23,20 +23,23 @@
 {
   display: block;
   position: fixed;
-  top: 2.5vh;
+  top: 14vh;
   left: 20vw;
   width: 60vw;
-  height: 95vh;
+  height: 82vh;
+  box-shadow: 2px 2px 2px 2px #3f3f3f9d;
   background-color: rgb(0, 0, 0);
   border-radius: 8px;
   overflow-y: auto;
+  
 }
 
 .blur .content
 {
   height: auto;
   width: 100%;
-  background-color: #030303;
+  background-color: #000000;
+  padding-bottom: 2vh;
 }
 
 .box::-webkit-scrollbar {
@@ -59,7 +62,7 @@
   cursor: pointer;
   position: absolute;
   right:2px;
-  top: 2px;
+  top: 15px;
   background-color: #000000bf;
   border-radius: 100%;
   color: white;
@@ -75,32 +78,92 @@
 }
 
 .blur .video-container {
-  width: 100%; /* Set the desired width for the container */
   max-width: 100%; /* Ensure the video does not exceed the container's width */
   position: relative;
   top: -7vh;
   height: auto;
+  
+  
 }
 
-video {
-  width: 100%; /* Set the video width to 100% of its container */
-  height: auto; /* Maintain the aspect ratio */
+.blur .video {
+  width: 100%;
+  height: 30em;
+  display: block;
+  margin: 0; /* Remove any default margins */
+  padding: 0; /* Remove any default padding */
+  overflow: hidden;
+}
+
+.blur .img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0; /* Remove any default margins */
+  padding: 0; /* Remove any default padding */
+  overflow: hidden;
 }
 
 .blur .volume_button{
   cursor: pointer;
   background-color: #ffffff08;
-  position: absolute;
+  position: relative;
   border-radius: 5vh;
-  height: 5vh;
-  width: 5vh;
+  height: 7vh;
+  width: 7vh;
   z-index: 20;
-  bottom: 10px;
-  right: 10px;
+  right: -55vw;
+  top:-21vh;
   border: #ffffff;
   border-color: aliceblue;
   border-style: double;
-  padding-top: 3px;
+}
+
+.blur .contact-us {
+  background-color: black;
+  margin-left: 10%;
+  color: white;
+  font-weight: bold;
+  font-size: 3vh;
+  
+}
+
+
+.blur .contact-img {
+  width: 3.6%;
+  margin-left: 10%;
+  margin-bottom: 2%;
+}
+
+.blur .contact-info .about-event {
+  margin-left: 0%;
+  padding-bottom: 3vh;
+}
+
+.blur .contact-one{
+  background-color: black;
+  margin-left: 15%;
+  margin-top: -6%;
+  margin-bottom: -20px;
+  color: white;
+  font-weight: normal;
+  font-size: 3vh;
+}
+
+
+.blur .contact-two{
+  background-color: black;
+  margin-left: 15%;
+  margin-top: -6%;
+  margin-bottom: 100px;
+  color: white;
+  font-weight: normal;
+  font-size: 3vh;
+}
+
+
+.blur .contact-info {
+  margin-top: -4%;
 }
 
 .blur .volume_button:hover{
@@ -108,19 +171,18 @@ video {
 }
 .blur .volume{
   
-  width: 90%;
+  width: 65%;
   height: auto;
 }
-
 .blur .Translate
 {
   position: absolute;
   bottom: 0vh;
   margin: 0;
   padding: 0;
-  width: 100%;
+  width: 950px;
   height: 37vh;
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)); /* Black to transparent gradient */
+  
   
 }
 
@@ -139,8 +201,8 @@ video {
   margin-right: 3vh;
   font-size: 2.5vh;
   font-weight: 700;
-  position: relative;
-  top: 70%;
+  position: absolute;
+  bottom: 7vh;
   }
   
   .blur .glow-button:hover {
@@ -148,12 +210,13 @@ video {
     
   }
   .blur .glow-button2 {
-  position: relative;
-  top: 70%;
+  position: absolute;
+  bottom: 7vh;
+  left: 16vw;
   background-color: #252525bb;
   color: #ffffff;
   border: none;
-  width:22vh;
+  width:20vh;
   height: 5vh;;
   cursor: pointer;
   border-radius: 3px;
@@ -166,7 +229,7 @@ video {
   .blur .button_text
   {
     position: relative;
-    top: 50%;
+    top: 10%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -178,12 +241,14 @@ video {
   
   height:2vh;
   width: auto;
+  background-color: white;
 }
 .blur .img_icn
 {
   position: relative;
-  top: -.25vh;
-  left: -1vh;
+  top: 2.69vh;
+  left: 2.3vh;
+  width: 40px;
 }
 
   .blur .glow-button2:hover {
@@ -192,26 +257,32 @@ video {
     
   }
 
+.blur .EventName
+{
+  font-size: 4vh;
+}
 .blur .About_info
 {
   width: 60%; /* Set the desired width for the container */
   position: relative;
-  top: -7vh;
+  text-align:justify;
+  top: 0vh;
   height: auto;
   margin-left: 5%;
+  margin-bottom: 5%;
   float:left;
   height: 70vh;
   padding-bottom: 10vh;
   color: #ffffff;
+  
 }
 
 .blur .Details
 {
   width: 30%; /* Set the desired width for the container */
   position: relative;
-  top: -7vh;
+  top: 0vh;
   height: auto;
-  
   margin-left: 5%;
   float:left;
   height: 70vh;
@@ -222,9 +293,8 @@ video {
 .blur .Event_tittle
 {
   position: absolute;
-  top:50%;
+  top:40%;
   left:-4vw;
   width:auto;
   height: 30%;
 }
-
