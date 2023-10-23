@@ -420,6 +420,7 @@ body {
 .slider-spon > img {
   flex: 0 0 calc(100% / var(--items-per-screen-spon));
   max-width: calc(100% / var(--items-per-screen-spon));
+  max-height: calc(100% / vw);
   aspect-ratio: 1 / 1;
   padding: var(--img-gap);
   cursor: pointer;
