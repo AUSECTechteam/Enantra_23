@@ -88,10 +88,10 @@ function App() {
             {/*empty*/}
           </a>
 
-          <a href=""  style={{float:'right'}}>
+          <a href="" style={{float:'right'}}>
             <img
                 className="logo"
-                src="https://drive.google.com/uc?export=view&id=1_oq4l8QMlKmNihexLrWxW0-5Rfwp8wwU"
+                src="https://drive.google.com/uc?export=view&id=17-jBZ2t-z6rzS1UDwT_cDRGK3dntbFq3"
                 alt="Logo"
               />
           </a>
@@ -103,14 +103,18 @@ function App() {
                 alt="Logo"
               />
           </a>
-
-          <a href="" style={{float:'right'}}>
+          
+          <a href=""  style={{float:'right'}}>
             <img
                 className="logo"
-                src="https://drive.google.com/uc?export=view&id=17-jBZ2t-z6rzS1UDwT_cDRGK3dntbFq3"
+                src="https://drive.google.com/uc?export=view&id=1_oq4l8QMlKmNihexLrWxW0-5Rfwp8wwU"
                 alt="Logo"
               />
           </a>
+
+          
+
+          
 
         </div>
 
