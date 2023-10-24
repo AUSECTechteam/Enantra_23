@@ -82,6 +82,7 @@
   position: relative;
   top: -7vh;
   height: auto;
+  margin-bottom: -7%;
   
   
 }
@@ -123,8 +124,9 @@
   background-color: black;
   margin-left: 10%;
   color: white;
-  font-weight: 400;
+  font-weight: 200;
   font-size: 4vh;
+  
   
 }
 
@@ -161,6 +163,10 @@
   font-size: 3vh;
 }
 
+.blur .contact_info {
+  margin-top: -11%;
+}
+
 
 .blur .contact-info {
   
@@ -169,6 +175,7 @@
   width: 100%;
   padding: 5%;
   background-color: #ffffff;
+  margin-top: 10%;
 }
 
 .blur .volume_button:hover{
@@ -309,6 +316,17 @@
   width:50%;
   float:left;
   height: 16vh;
+  margin-top: -5%;
+}
+
+.contact_box .contact-one {
+  margin-top: -5%;
+  font-size: 3vh;
+}
+
+.contact_box .contact-us {
+  font-size: 3.5vh;
+  font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
 }
 
 .contact_info
@@ -318,7 +336,7 @@
   height: fit-content;
   margin-left: 5%;
   margin-right: 5%;
-  
+  margin-top: -10%;
   float:left;
   height: fit-content;
   padding-bottom: 10vh;
