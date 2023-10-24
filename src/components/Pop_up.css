@@ -17,6 +17,7 @@
   height: 100vh;
   backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
   background: rgba(0, 0, 0, 0.169); /* Adjust the background color and opacity as needed */
+  font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
 }
 
 .blur .box
@@ -27,7 +28,6 @@
   left: 20vw;
   width: 60vw;
   height: 82vh;
-  box-shadow: 2px 2px 2px 2px #3f3f3f9d;
   background-color: rgb(0, 0, 0);
   border-radius: 8px;
   overflow-y: auto;
@@ -82,6 +82,7 @@
   position: relative;
   top: -7vh;
   height: auto;
+  margin-bottom: -7%;
   
   
 }
@@ -121,10 +122,11 @@
 
 .blur .contact-us {
   background-color: black;
-  margin-left: 10%;
+  margin-left: 0%;
   color: white;
-  font-weight: bold;
+  
   font-size: 3vh;
+  
   
 }
 
@@ -138,16 +140,19 @@
 .blur .contact-info .about-event {
   margin-left: 0%;
   padding-bottom: 3vh;
+  
 }
 
 .blur .contact-one{
   background-color: black;
-  margin-left: 15%;
-  margin-top: -6%;
-  margin-bottom: -20px;
+  margin-left: 0%;
+  margin-top: -2%;
   color: white;
-  font-weight: normal;
+  
+  
+  margin-top: -5%;
   font-size: 3vh;
+  
 }
 
 
@@ -161,9 +166,19 @@
   font-size: 3vh;
 }
 
+.blur .contact_info {
+  margin-top: -11%;
+}
+
 
 .blur .contact-info {
-  margin-top: -4%;
+  
+  border: solid red;
+  height: fit-content;
+  width: 100%;
+  padding: 5%;
+  background-color: #ffffff;
+  margin-top: 10%;
 }
 
 .blur .volume_button:hover{
@@ -180,9 +195,9 @@
   bottom: 0vh;
   margin: 0;
   padding: 0;
-  width: 950px;
-  height: 37vh;
-  
+  width: 100%;
+  height: 60%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
   
 }
 
@@ -202,7 +217,7 @@
   font-size: 2.5vh;
   font-weight: 700;
   position: absolute;
-  bottom: 7vh;
+  bottom: 12vh;
   }
   
   .blur .glow-button:hover {
@@ -267,27 +282,27 @@
   position: relative;
   text-align:justify;
   top: 0vh;
-  height: auto;
   margin-left: 5%;
+  margin-right: 5%;
   margin-bottom: 5%;
   float:left;
-  height: 70vh;
+  
   padding-bottom: 10vh;
   color: #ffffff;
+ 
+  
   
 }
 
 .blur .Details
 {
-  width: 30%; /* Set the desired width for the container */
-  position: relative;
-  top: 0vh;
-  height: auto;
-  margin-left: 5%;
+  
+  width: 25%; /* Set the desired width for the container */
+  margin-left: 1.5%;
   float:left;
-  height: 70vh;
   padding-bottom: 10vh;
   color: #ffffff;
+
 }
 
 .blur .Event_tittle
@@ -297,4 +312,39 @@
   left:-4vw;
   width:auto;
   height: 30%;
+}
+
+.contact_box
+{
+  width:50%;
+  float:left;
+  height: 16vh;
+  margin-top: -5%;
+  left: 1%;
+}
+
+.contact_box .contact-one {
+  
+}
+
+
+.contact_info
+{
+  width: 90%; /* Set the desired width for the container */
+  
+  height: fit-content;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: -10%;
+  float:left;
+  height: fit-content;
+  padding-bottom: 10vh;
+  color: #ffffff;
+  
+}
+
+.Details_span
+{
+  color: #747474;
+  font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
 }

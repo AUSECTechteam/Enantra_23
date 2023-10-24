@@ -8,14 +8,44 @@ function Popup({ onClose, imageId }) {
   let myarray = imageId.split("-");
   const type = myarray[0];
   const num = Number(myarray[1]);
-  let data_present = true;
+  let data_present = true; //to check wether if we have event details
+  let event = true; // to check wether if the event is GenZ Bazzar
+  let team = false;
+  let individual = false;
+  
+  
   if( data[type][num-1] )
+  {
+    
+    //to participate as a team
+    if (type === "mini" )
+      team = true;
+    else
+      individual = true;
+
+    //to not have the button to buy tickets
+    if (data[type][num - 1]["event-name"] === "GenZ Bazaar")
+    {  
+      event = false;
+      individual = false;
+    }
+
+    if (data[type][num - 1]["event-name"] === "Auction Hosue")
+    {  
+      team = true;
+      individual = false;
+    }
+    
+
     console.log(imageId);
+  }  
   else
   {  
     console.log("It is not present");
     data_present = false;
   }
+
+
 
   return (
     data_present && (  <div className="blur" >
@@ -39,6 +69,7 @@ function Popup({ onClose, imageId }) {
             }
 
             {/* Register button */}
+            { event &&
             <a href={data[type][num-1]["reg-link"]} 
             target="_blank">
               <button class="glow-button" type="button" value="insta">
@@ -46,53 +77,49 @@ function Popup({ onClose, imageId }) {
                 Buy Tickets
                 </div>
               </button>
-            </a>
-
-            {/* Contact button 
-            <a href={data[type][num-1]["contact-number"][0]} target="_blank">
-              <button class="glow-button2" type="button" value="More info">
-                <div class="button_text">
-                  More info
-                </div>
-              </button>
-            </a>
-            */}
-
+            </a>}
+            {!data[type][num-1]["img-status"] &&<div class="Translate"></div>}
           </div>
 
           <div class="About_info">
             <h4 className='EventName'>{data[type][num-1]["event-name"]}</h4>
-            <p>{data[type][num-1]["about-event"]}</p>
-              
-            <br></br>
-
-            <br></br>
-
-            
-            <div className='contact-info'>
-              <h4 className='EventName'>Contact Us</h4>
-                
-                <p className='contact-us' >{data[type][num-1]['contact-name'][0]}</p>
-                <img src={contact} className='contact-img'></img>
-                <br></br>
-                <p className='contact-one'>{data[type][num-1]['contact-number'][0]}</p>
-                <br></br>
-                <p className='contact-us'>{data[type][num-1]['contact-name'][1]}</p>
-                <img src={contact} className='contact-img'></img>
-                <p className='contact-two'>{data[type][num-1]['contact-number'][1]}</p>
-            </div>
-            
+            <p>{data[type][num-1]["about-event"]}</p>  
           </div>
 
 
           <div class="Details">
             <h4 className='EventName'>Details</h4>
-            <p>Date: {data[type][num-1]["event-date"]}</p>
-            <p>Time: {data[type][num-1]["start-time"]}</p>
-            <p>Venue: {data[type][num-1]["event-location"]}</p>
-            <p>Fees: {data[type][num-1]["event-fee"]}</p>
+            <p><span className='Details_span'>Date:</span> {data[type][num-1]["event-date"]}</p>
+            <p><span className='Details_span'>Time:</span> {data[type][num-1]["start-time"]}</p>
+            <p><span className='Details_span'>Venue:</span> {data[type][num-1]["event-location"]}</p>
+            {team && <p><span className='Details_span'>Cost per team:</span> &#8377; {data[type][num-1]["event-fee"]}</p>}
+            {individual && <p><span className='Details_span'>Cost per individual:</span> &#8377; {data[type][num-1]["event-fee"]}</p>}
           </div>
-        </div>
+
+          <div class="contact_info">
+            <h4 className='EventName'>Contact Us</h4>
+            <div class="contact_box">
+              <p className='contact-us' >{data[type][num-1]['contact-name'][0]}</p>
+              <p className='contact-one'>+91 {data[type][num-1]['contact-number'][0]}</p>
+            </div>
+            
+            <div class="contact_box">
+              <p className='contact-us'>{data[type][num-1]['contact-name'][1]}</p>
+              <p className='contact-one'>+91 {data[type][num-1]['contact-number'][1]}</p>
+            </div>  
+            
+          </div>
+
+          
+
+          
+
+          
+
+     </div>
+
+        
+
       </div>
     </div>)
   );
