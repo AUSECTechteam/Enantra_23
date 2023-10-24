@@ -8,22 +8,44 @@ function Popup({ onClose, imageId }) {
   let myarray = imageId.split("-");
   const type = myarray[0];
   const num = Number(myarray[1]);
-  let data_present = true;
-  let event = true;
-  if (data[type][num - 1]["event-name"] === "GenZ Bazaar")
-    event = false;
-  else
-  {
-    console.log(data[type][num - 1]["event-name"]);
-    event = true;
-  }
+  let data_present = true; //to check wether if we have event details
+  let event = true; // to check wether if the event is GenZ Bazzar
+  let team = false;
+  let individual = false;
+  
+  
   if( data[type][num-1] )
+  {
+    
+    //to participate as a team
+    if (type === "mini" )
+      team = true;
+    else
+      individual = true;
+
+    //to not have the button to buy tickets
+    if (data[type][num - 1]["event-name"] === "GenZ Bazaar")
+    {  
+      event = false;
+      individual = false;
+    }
+
+    if (data[type][num - 1]["event-name"] === "Auction Hosue")
+    {  
+      team = true;
+      individual = false;
+    }
+    
+
     console.log(imageId);
+  }  
   else
   {  
     console.log("It is not present");
     data_present = false;
   }
+
+
 
   return (
     data_present && (  <div className="blur" >
@@ -56,17 +78,7 @@ function Popup({ onClose, imageId }) {
                 </div>
               </button>
             </a>}
-
-            {/* Contact button 
-            <a href={data[type][num-1]["contact-number"][0]} target="_blank">
-              <button class="glow-button2" type="button" value="More info">
-                <div class="button_text">
-                  More info
-                </div>
-              </button>
-            </a>
-            */}
-
+            {!data[type][num-1]["img-status"] &&<div class="Translate"></div>}
           </div>
 
           <div class="About_info">
@@ -77,10 +89,11 @@ function Popup({ onClose, imageId }) {
 
           <div class="Details">
             <h4 className='EventName'>Details</h4>
-            <p>Date: {data[type][num-1]["event-date"]}</p>
-            <p>Time: {data[type][num-1]["start-time"]}</p>
-            <p>Venue: {data[type][num-1]["event-location"]}</p>
-            <p>Cost: &#8377; {data[type][num-1]["event-fee"]}</p>
+            <p><span className='Details_span'>Date:</span> {data[type][num-1]["event-date"]}</p>
+            <p><span className='Details_span'>Time:</span> {data[type][num-1]["start-time"]}</p>
+            <p><span className='Details_span'>Venue:</span> {data[type][num-1]["event-location"]}</p>
+            {team && <p><span className='Details_span'>Cost per team:</span> &#8377; {data[type][num-1]["event-fee"]}</p>}
+            {individual && <p><span className='Details_span'>Cost per individual:</span> &#8377; {data[type][num-1]["event-fee"]}</p>}
           </div>
 
           <div class="contact_info">
