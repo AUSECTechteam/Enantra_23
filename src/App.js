@@ -81,7 +81,7 @@ function App() {
             Home
           </a>
           
-          <a href="https://linktr.ee/ausec.official" className="space">
+          <a href="https://forms.gle/ATqbJAiBkzkNEDmv9" target='_blank' className="space">
             Contact Us
           </a>
           <a href="" class="space" style={{float:'right'}}>
