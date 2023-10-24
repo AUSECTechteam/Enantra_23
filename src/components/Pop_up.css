@@ -122,10 +122,10 @@
 
 .blur .contact-us {
   background-color: black;
-  margin-left: 10%;
+  margin-left: 0%;
   color: white;
-  font-weight: 200;
-  font-size: 4vh;
+  
+  font-size: 3vh;
   
   
 }
@@ -145,11 +145,14 @@
 
 .blur .contact-one{
   background-color: black;
-  margin-left: 10%;
+  margin-left: 0%;
   margin-top: -2%;
   color: white;
-  font-weight: normal;
+  
+  
+  margin-top: -5%;
   font-size: 3vh;
+  
 }
 
 
@@ -317,17 +320,13 @@
   float:left;
   height: 16vh;
   margin-top: -5%;
+  left: 1%;
 }
 
 .contact_box .contact-one {
-  margin-top: -5%;
-  font-size: 3vh;
+  
 }
 
-.contact_box .contact-us {
-  font-size: 3.5vh;
-  font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
-}
 
 .contact_info
 {

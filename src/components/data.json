@@ -119,6 +119,7 @@
             "event-type": "Offline",
             "event-fee":"Free Entry",
             "event-date": "3/11/2023",
+            "start-time": "9AM Onwards",
             "end-time": "",
             "event-location": "Raman Auditorium",
             "organizer": "Dheyzma",
@@ -154,13 +155,14 @@
             "start-time": "9AM Onwards",
             "end-time": "6PM",
             "event-date":"1/11/2023",
-            "event-location": "Vivekananda Auditorium",
+            "event-location": " Outside Vivekananda Auditorium",
             "organizer": "A Tarun Maniskandan ",
             "category": "Mega-event",
-            "about-event": "Gen Z Bazaar! 🎨✨💥Join us at Vivek auditorium for a showcase of creativity and innovation brought to you by budding entrepreneurs.  💥Unique handicrafts lovingly crafted by teenpreneurs and creative entrepreneurs. 💥Support young talent and shop for exceptional creations. Don't miss out on this incredible opportunity to celebrate and empower young entrepreneurs 🔥. The Gen Z Bazaar promises a day filled with creativity, innovation, and communit",
+            "about-event": "Experience the Spark of Genius at the Gen Z Bazaar! Come and immerse yourself in a display of imaginative ingenuity, courtesy of emerging entrepreneurs just outside vivekanandha auditorium. Discover one-of-a-kind handicrafts crafted with passion by teenage innovators and creative business owners. Stand behind the up-and-coming talent and acquire remarkable handcrafted pieces. Make sure you seize this amazing chance to honor and uplift the youth in business. The Gen Z Bazaar guarantees a day brimming with inventiveness, originality, and togetherness.",
             "contact-name": [ "A Tarun Maniskandan " , "Tanusri"],
             "contact-number": [ "9962249673","7305885777"]
         }
+        
     ],
     
     "workshops":
