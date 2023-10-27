@@ -27,9 +27,9 @@ class SixDegree extends Component {
     
       getMaxSlides() {
         const w = window.innerWidth;
-        if (w <= 500) this.setState({ maxSlides: 2 });
-        else if (w <= 1000) this.setState({ maxSlides: 2 });
-        else this.setState({ maxSlides: 2 });
+        if (w <= 500) this.setState({ maxSlides: 1 }); // 2
+        else if (w <= 1000) this.setState({ maxSlides: 1 }); // 2
+        else this.setState({ maxSlides: 1 }); // 2 for 3 slides
       }
     
       moveRight() {
@@ -75,13 +75,13 @@ class SixDegree extends Component {
                     <div className="text">&#8249;</div>
                 </button>
                 <div ref={this.sliderRef} className="slider-six">
-                    <img className='event-image'  id="six-1" onClick={this.handleImageClick} src="https://fakeimg.pl/700x400/000000/c7b018?text=STAY+TUNED!&font=museo"/>
-                    <img className='event-image'  id="six-2" onClick={this.handleImageClick} src="https://fakeimg.pl/700x400/000000/c7b018?text=STAY+TUNED!&font=museo"/>
-                    <img className='event-image'  id="six-3" onClick={this.handleImageClick} src="https://fakeimg.pl/700x400/000000/c7b018?text=STAY+TUNED!&font=museo"/>
-                    <img className='event-image'  id="six-4" onClick={this.handleImageClick} src="https://fakeimg.pl/700x400/000000/c7b018?text=STAY+TUNED!&font=museo"/>
-                    <img className='event-image'  id="six-5" onClick={this.handleImageClick} src="https://fakeimg.pl/700x400/000000/c7b018?text=STAY+TUNED!&font=museo"/>
+                    <img className='event-image'  id="six-1" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1zqmQCJSzveYfunRST6o1xW-1jTN1SzAj"/>
+                    <img className='event-image'  id="six-2" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1FVDaDSZkQWmeQ840ccumWqFg0Kr1L-3J"/>
+                    <img className='event-image'  id="six-3" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1Oj2dVqLZlhkCSflDv-hbP3Sd_EjNxS24"/>
+                    <img className='event-image'  id="six-4" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1R1_OzX7B39flIvfvf95j1pe_qrstDfc9"/>
+                    <img className='event-image'  id="six-5" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1O5ZQ2KZypdz3fzcALLOVDaJPBX0FcQrI"/>
                     <img className='event-image'  id="six-6" onClick={this.handleImageClick} src="https://fakeimg.pl/700x400/000000/c7b018?text=STAY+TUNED!&font=museo"/>
-                    <img className='event-image'  id="six-7" onClick={this.handleImageClick} src="https://fakeimg.pl/700x400/000000/c7b018?text=STAY+TUNED!&font=museo"/>
+                    {/* <img className='event-image'  id="six-7" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=https://fakeimg.pl/700x400/000000/c7b018?text=STAY+TUNED!&font=museo"/> */}
                 </div>
                 <button className="slider-button-six right-handle" onClick={this.moveRight.bind(this)}>
                     <div className="text">&#8250;</div>
