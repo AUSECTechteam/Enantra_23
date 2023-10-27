@@ -192,6 +192,15 @@ function App() {
         </div>
       </div>
 
+      {/* <div className="developers">
+        <p>Akshay Krishna</p>
+        <p>Aadhitya Sriram</p>
+        <p>Surendra Kumar</p>
+        <p>Nitin</p>
+        <p>Shriram G</p>
+        <p></p>
+      </div> */}
+
       {/*Pop Up message to rotate the screen*/}
       <div className="popup">
         <div className="popup-content">
