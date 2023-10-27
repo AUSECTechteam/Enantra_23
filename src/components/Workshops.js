@@ -71,6 +71,7 @@ class WorkShops extends Component {
     };
 
     handleImageClick = (event) => {
+      
       this.setState
       ({ 
         isOpen: true,
@@ -93,8 +94,8 @@ class WorkShops extends Component {
                   <img className='event-image' id="workshops-2" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1j_w0R9fg5T6pX4ulQS99cYpPHKufc-S0"/>
                   <img className='event-image' id="workshops-3" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1_Jy5YLOUYlmoytdDaVkY3nxHF-7Wgs8L"/>
                   <img className='event-image' id="workshops-4" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1lK-hbM3dxiajihxtWbcU_0QDfOLrX6bl"/>
-                  <img className='event-image' id="workshops-1" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1Oqs2jS3zAD8TG471Vs67PAECfKTff-G9"/>
-                  <img className='event-image' id="workshops-5" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1-PH2XgeJ1QchHS8jeSc9a3DL2GXIdkJA"/>
+                  <img className='event-image' id="workshops-6" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=15DaCvxwgEE-VodTpXcyh-dGyjUvdt7yu"/>
+                  <img className='event-image' id="workshops-5" onClick={this.handleImageClick} src="https://drive.google.com/uc?export=view&id=1FOKR_c-AFqrO1f3HPZ3iM7Pvct-DvHCD"/>
                 </div>
                 <button className="slider-button-work right-handle" onClick={this.moveRight.bind(this)}>
                     <div className="text">&#8250;</div>

@@ -161,7 +161,44 @@
             "about-event": "Experience the Spark of Genius at the Gen Z Bazaar! Come and immerse yourself in a display of imaginative ingenuity, courtesy of emerging entrepreneurs just outside vivekanandha auditorium. Discover one-of-a-kind handicrafts crafted with passion by teenage innovators and creative business owners. Stand behind the up-and-coming talent and acquire remarkable handcrafted pieces. Make sure you seize this amazing chance to honor and uplift the youth in business. The Gen Z Bazaar guarantees a day brimming with inventiveness, originality, and togetherness.",
             "contact-name": [ "A Tarun Maniskandan " , "Tanusri"],
             "contact-number": [ "9962249673","7305885777"]
-        }
+    },
+
+    {       "event-name":"Hackathon",
+            "event-image": "https://drive.google.com/uc?export=view&id=1Dl7n2T26dfcG7eLIML3_NzEFjhSRD22B",
+            "img-status": false,
+            "video-status": false,
+            "event-fee":"100 per team",
+            "reg-link": "https://unstop.com/p/hackathon-enantra-80-anna-university-au-chennai-806266",
+            "event-type": "Offline",
+            "start-time": "9AM-3PM",
+            "event-date":"3/11/2023",
+            "event-location": "Vivekananda Auditorium",
+            "organizer": "A Tarun Maniskandan ",
+            "category": "Mega-event",
+            "about-event": "Prepare for a day filled with innovation, creativity, and collaborative problem-solving at Hackathon 2023! This one-day event, running from 9 a.m. to 3 p.m., offers an exciting opportunity for tech enthusiasts, developers, and creative individuals.",
+            "contact-name": [ "A Tarun Maniskandan " , "Tanusri"],
+            "contact-number": [ "9962249673","7305885777"]
+    },
+    
+
+    
+
+    
+    {       "event-name":"6 Degree Talks",
+            "event-image": "https://drive.google.com/uc?export=view&id=1zK6PIci5SWObLznqcCf79G3SdkwoB0hx",
+            "img-status": false,
+            "video-status": false,
+            "event-fee":"200",
+            "reg-link": "https://unstop.com/p/6dt-6-degree-talks-enantra-80-anna-university-au-chennai-805384",
+            "event-type": "Offline",
+            "start-time": "4PM Onwards",
+            "event-date":"2/11/2023",
+            "event-location": "Vivekananda Auditorium",
+            "category": "Mega-event",
+            "about-event": "6DT is a combination of an award ceremony and a talk show. Our aim is to recognize and celebrate the achievements of CEOs and creative startups while allowing them to share their entrepreneurial journeys with students. “6 Degree Talks (6DT)“, provides a platform for students to connect with accomplished entrepreneurs. The 6DT event has gained significant acclaim, featuring esteemed speakers like Lokesh Kanagaraj, actor KK Krishna Kumar, Hip hop Adhi, Kalidas Jayaram, Amrita Samanth (mommyshots), Abhisek Nirmal (stand-up comedian), and Brand Avatar CEO Hemachandran in the past. And this year's lineup for our event has bigger names than ever before!",
+            "contact-name": [ "Aadhi " , "Dhivya"],
+            "contact-number": [ "9940315612","8838080162"]
+    }
         
     ],
     
@@ -256,7 +293,7 @@
         "contact-number": [ "",""]
     },
     {   "event-name":"Data Analytics Workshop",
-    "event-image": "https://www.youtube.com/embed/H4YVnIFchlM?autoplay=0",
+    "event-image": "https://www.youtube.com/embed/H4YVnIFchlM?autoplay=1",
     "img-status": true,
     "video-status": false,
     "reg-link": "https://unstop.com/workshops-webinars/content-creation-workshop-anna-university-au-chennai-797089",
