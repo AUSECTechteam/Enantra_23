@@ -37,9 +37,9 @@ class SixDegree extends Component {
     
       getMaxSlides() {
         const w = window.innerWidth;
-        if (w <= 500) this.setState({ maxSlides: 1 }); // 2
-        else if (w <= 1000) this.setState({ maxSlides: 1 }); // 2
-        else this.setState({ maxSlides: 1 }); // 2 for 3 slides
+        if (w <= 500) this.setState({ maxSlides: 2 }); // 1
+        else if (w <= 1000) this.setState({ maxSlides: 2 }); // 1
+        else this.setState({ maxSlides: 2 }); // 1 for 3 slides
       }
     
       moveRight() {
@@ -87,10 +87,12 @@ class SixDegree extends Component {
                     <img className='event-image'  id="six-1" onClick={() => this.handleClick()} src="https://drive.google.com/uc?export=view&id=1zqmQCJSzveYfunRST6o1xW-1jTN1SzAj"/>
                     <img className='event-image'  id="six-2" onClick={() => this.handleClick()} src="https://drive.google.com/uc?export=view&id=1FVDaDSZkQWmeQ840ccumWqFg0Kr1L-3J"/>
                     <img className='event-image'  id="six-3" onClick={() => this.handleClick()} src="https://drive.google.com/uc?export=view&id=1Oj2dVqLZlhkCSflDv-hbP3Sd_EjNxS24"/>
-                    <img className='event-image'  id="six-4" onClick={() => this.handleClick()} src="https://drive.google.com/uc?export=view&id=1R1_OzX7B39flIvfvf95j1pe_qrstDfc9"/>
+                    <img className='event-image'  id="six-4" onClick={() => this.handleClick()} src="https://drive.google.com/uc?export=view&id=1mxWTCCxDpl8QrgX4oYcLP_NOyD5y3p16"/>
                     <img className='event-image'  id="six-5" onClick={() => this.handleClick()} src="https://drive.google.com/uc?export=view&id=1O5ZQ2KZypdz3fzcALLOVDaJPBX0FcQrI"/>
-                    <img className='event-image'  id="six-6" onClick={() => this.handleClick()} src="https://fakeimg.pl/700x400/000000/c7b018?text=STAY+TUNED!&font=museo"/>
-                    {/* <img className='event-image'  id="six-7" onClick={() => this.handleClick(7)} src="https://drive.google.com/uc?export=view&id=https://fakeimg.pl/700x400/000000/c7b018?text=STAY+TUNED!&font=museo"/> */}
+                    <img className='event-image'  id="six-6" onClick={() => this.handleClick()} src="https://drive.google.com/uc?export=view&id=11BDrEYSdpmhzb3UvaugCvV5ZyrU9TPyH"/>
+                    <img className='event-image'  id="six-7" onClick={() => this.handleClick()} src="https://fakeimg.pl/700x400/000000/c7b018?text=STAY+TUNED!&font=museo"/>
+                    <img className='event-image'  id="six-1" onClick={() => this.handleClick()} src="https://drive.google.com/uc?export=view&id=1zqmQCJSzveYfunRST6o1xW-1jTN1SzAj"/>
+                    <img className='event-image'  id="six-2" onClick={() => this.handleClick()} src="https://drive.google.com/uc?export=view&id=1FVDaDSZkQWmeQ840ccumWqFg0Kr1L-3J"/>
                 </div>
                 <button className="slider-button-six right-handle" onClick={this.moveRight.bind(this)}>
                     <div className="text">&#8250;</div>
