@@ -90,7 +90,7 @@ class SixDegree extends Component {
                     <img className='event-image'  id="six-4" onClick={() => this.handleClick()} src="https://drive.google.com/uc?export=view&id=1mxWTCCxDpl8QrgX4oYcLP_NOyD5y3p16"/>
                     <img className='event-image'  id="six-5" onClick={() => this.handleClick()} src="https://drive.google.com/uc?export=view&id=1O5ZQ2KZypdz3fzcALLOVDaJPBX0FcQrI"/>
                     <img className='event-image'  id="six-6" onClick={() => this.handleClick()} src="https://drive.google.com/uc?export=view&id=11BDrEYSdpmhzb3UvaugCvV5ZyrU9TPyH"/>
-                    <img className='event-image'  id="six-7" onClick={() => this.handleClick()} src="https://fakeimg.pl/700x400/000000/c7b018?text=STAY+TUNED!&font=museo"/>
+                    <img className='event-image'  id="six-7" onClick={() => this.handleClick()} src="https://drive.google.com/uc?export=view&id=1nw-Ya7rhrjI-0OtqYc1Cz7HMLxVs_6w1"/>
                     <img className='event-image'  id="six-1" onClick={() => this.handleClick()} src="https://drive.google.com/uc?export=view&id=1zqmQCJSzveYfunRST6o1xW-1jTN1SzAj"/>
                     <img className='event-image'  id="six-2" onClick={() => this.handleClick()} src="https://drive.google.com/uc?export=view&id=1FVDaDSZkQWmeQ840ccumWqFg0Kr1L-3J"/>
                 </div>
