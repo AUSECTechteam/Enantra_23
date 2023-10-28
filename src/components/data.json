@@ -117,7 +117,7 @@
             "video-status": false,
             "reg-link": "https://unstop.com/competitions/idea-crunch-anna-university-au-chennai-780442",
             "event-type": "Offline",
-            "event-fee":"Free Entry",
+            "event-fee":"",
             "event-date": "3/11/2023",
             "start-time": "9AM Onwards",
             "end-time": "",
@@ -167,7 +167,7 @@
             "event-image": "https://drive.google.com/uc?export=view&id=1Dl7n2T26dfcG7eLIML3_NzEFjhSRD22B",
             "img-status": false,
             "video-status": false,
-            "event-fee":"100 per team",
+            "event-fee":"100",
             "reg-link": "https://unstop.com/p/hackathon-enantra-80-anna-university-au-chennai-806266",
             "event-type": "Offline",
             "start-time": "9AM-3PM",
@@ -176,8 +176,8 @@
             "organizer": "A Tarun Maniskandan ",
             "category": "Mega-event",
             "about-event": "Prepare for a day filled with innovation, creativity, and collaborative problem-solving at Hackathon 2023! This one-day event, running from 9 a.m. to 3 p.m., offers an exciting opportunity for tech enthusiasts, developers, and creative individuals.",
-            "contact-name": [ "A Tarun Maniskandan " , "Tanusri"],
-            "contact-number": [ "9962249673","7305885777"]
+            "contact-name": [ "Aaditya Prabhu" , "Akshay Krishna"],
+            "contact-number": [ "9940315612","9003070822"]
     },
     
 
@@ -196,7 +196,7 @@
             "event-location": "Vivekananda Auditorium",
             "category": "Mega-event",
             "about-event": "6DT is a combination of an award ceremony and a talk show. Our aim is to recognize and celebrate the achievements of CEOs and creative startups while allowing them to share their entrepreneurial journeys with students. “6 Degree Talks (6DT)“, provides a platform for students to connect with accomplished entrepreneurs. The 6DT event has gained significant acclaim, featuring esteemed speakers like Lokesh Kanagaraj, actor KK Krishna Kumar, Hip hop Adhi, Kalidas Jayaram, Amrita Samanth (mommyshots), Abhisek Nirmal (stand-up comedian), and Brand Avatar CEO Hemachandran in the past. And this year's lineup for our event has bigger names than ever before!",
-            "contact-name": [ "Aadhi " , "Dhivya"],
+            "contact-name": [ "Adithya" , "Dhivya"],
             "contact-number": [ "9940315612","8838080162"]
     }
         
@@ -279,35 +279,35 @@
         "event-image": "https://www.youtube.com/embed/UY1DOx3xhV0?autoplay=1",
         "img-status": true,
         "video-status": false,
-        "reg-link": "https://unstop.com/workshops-webinars/content-creation-workshop-anna-university-au-chennai-797089",
+        "reg-link": "https://unstop.com/workshops-webinars/stock-market-workshop-enantra-80-anna-university-au-chennai-806263",
         "event-type": "Offline",
         "start-time": "10AM Onwards",
         "end-time": "12PM",
-        "event-location": "HM Hall",
+        "event-location": "Hall of Guines",
         "event-date":"3/11/2023",
         "event-fee":"250",
         "organizer": "Vishnu ",
         "category": "Workshop",
         "about-event": "Join our Stock Market Workshop, where the world of financial literacy and investment mastery awaits you! This workshop is not just a learning opportunity; it's a gateway to unlocking the secrets of the stock market and empowering yourself with the knowledge and skills to make informed investment decisions. In this immersive experience, participants will embark on a fascinating journey into the intricacies of stock markets. You will gain a deep understanding of market dynamics, exploring the rise and fall of stocks, deciphering market trends, and understanding the factors that influence stock prices. Our experts will unravel the complexities of portfolio management, guiding you on how to create and optimize a diversified investment portfolio tailored to your financial goals. One of the core focuses of this workshop is risk assessment. You will learn how to analyze and mitigate risks effectively, enabling you to make confident investment choices even in volatile market conditions. Through real-world case studies and simulations, you'll sharpen your skills in strategic trading, mastering the art of buying low and selling high. What sets this workshop apart is the invaluable guidance provided by our expert instructors. These professionals bring a wealth of practical experience and knowledge to the table, offering you insights that textbooks can't provide. You will have the opportunity to interact directly with these experts, asking questions, seeking advice, and gaining insights into successful investment strategies.Don't miss this opportunity to empower yourself with the knowledge and tools needed to secure your financial future. Invest in your education today, and let's embark on this exciting venture together. See you at the Stock Market Workshop, where your investment mastery begins!",
-        "contact-name": [ "Vishnu" , "Sarveshwaran"],
-        "contact-number": [ "",""]
+        "contact-name": [ "Adithya" , "Sarveshwaran"],
+        "contact-number": [ "7893410746","9123551408"]
     },
     {   "event-name":"Data Analytics Workshop",
     "event-image": "https://www.youtube.com/embed/H4YVnIFchlM?autoplay=1",
     "img-status": true,
     "video-status": false,
-    "reg-link": "https://unstop.com/workshops-webinars/content-creation-workshop-anna-university-au-chennai-797089",
+    "reg-link": "https://unstop.com/p/data-analytics-workshop-enantra-80-anna-university-au-chennai-806259",
     "event-type": "Offline",
-    "start-time": "10AM Onwards",
+    "start-time": "10AM-12PM",
     "end-time": "12PM",
     "event-location": "Tag Auditorium ",
     "event-date":"3/11/2023",
-    "event-fee":"250",
+    "event-fee":"350",
     "organizer": "Vishnu ",
     "category": "Workshop",
-    "about-event": "A content creation workshop is a great way to learn the basics of creating high-quality content that will engage and inform your audience. In this workshop, you will learn about the different types of content, how to research and write engaging content, and how to promote your content. You will also have the opportunity to practise your skills by creating your own content.This workshop is perfect for anyone who wants to learn how to create content that will help them achieve their business goals. Whether you are a business owner, a marketer, or simply someone who wants to share their knowledge with the world, this workshop will give you the tools you need to create content that will make a difference.",
-    "contact-name": [ "" , ""],
-    "contact-number": [ "",""]
+    "about-event": "Join the Data Analytics Workshop conducted by GUVI, the trailblazers in making technical education accessible to everyone in their native languages. GUVI's mission, 'to make technical education available to all,' is not just a statement but a commitment to empowering individuals with knowledge. GUVI, renowned for its diverse professional and certificate tech courses, brings you a workshop that goes beyond traditional learning boundaries. Whether you are a student, graduate, or a working professional aiming to upskill, this workshop is designed to meet your needs and aspirations.    The workshop provides a supportive and inclusive learning environment where participants can freely ask questions, collaborate with peers, and engage with the instructors. By the end of this workshop, you will not only have a solid understanding of data analytics but also the confidence to apply your skills in real-world scenarios.",
+    "contact-name": [ "Vinay Khenna" , "Faheera"],
+    "contact-number": [ "+919962394842","8681879364"]
 }
     ]
 }

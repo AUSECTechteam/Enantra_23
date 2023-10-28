@@ -30,13 +30,25 @@ function Popup({ onClose, imageId }) {
       individual = false;
     }
 
-    if (data[type][num - 1]["event-name"] === "Auction Hosue")
+    if (data[type][num - 1]["event-name"] === "Auction House")
     {  
       team = true;
       individual = false;
     }
-    
 
+    if (data[type][num - 1]["event-name"] === "Idea Crunch")
+    {
+      team = false;
+      individual = false;
+    } 
+
+    
+    if (data[type][num - 1]["event-name"] === "Hackathon")
+    {
+      team = true;
+      individual = false;
+    } 
+    
     console.log(imageId);
   }  
   else
@@ -92,7 +104,7 @@ function Popup({ onClose, imageId }) {
             <p><span className='Details_span'>Date:</span> {data[type][num-1]["event-date"]}</p>
             <p><span className='Details_span'>Time:</span> {data[type][num-1]["start-time"]}</p>
             <p><span className='Details_span'>Venue:</span> {data[type][num-1]["event-location"]}</p>
-            {team && <p><span className='Details_span'>Cost per team:</span> &#8377; {data[type][num-1]["event-fee"]}</p>}
+            {team && (imageId!="mega-1") && <p><span className='Details_span'>Cost per team:</span> &#8377; {data[type][num-1]["event-fee"]}</p>}
             {individual && <p><span className='Details_span'>Cost per individual:</span> &#8377; {data[type][num-1]["event-fee"]}</p>}
           </div>
 
